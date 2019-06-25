@@ -33,7 +33,8 @@ for file in data:
 		name = name[0].decode('utf-8').strip()
 		os.rename(name, file.rstrip(".tgz"))
 	except:
-		print("file {} failed".format(file))```
+		print("file {} failed".format(file))
+```
 
 
 2. In onearth-tile-services, copy configs to /etc/onearth/config/layers/epsg4326/best/ and use sed script to update data_path.

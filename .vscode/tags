@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28b/
+ACCESS_LOG	../app/utils.py	/^def ACCESS_LOG(message):$/;"	kind:function	line:4
+ERROR_LOG	../app/utils.py	/^def ERROR_LOG(message):$/;"	kind:function	line:8
+about	../app/main.py	/^def about():$/;"	kind:function	line:171
+allowed_methods	../app/main.py	/^allowed_methods = {$/;"	kind:variable	line:57
+app	../app/main.py	/^app = Flask(__name__)$/;"	kind:variable	line:13
+blur	../app/methods.py	/^def blur(r):$/;"	kind:function	line:23
+catch_all_debug	../app/main.py	/^def catch_all_debug(path):$/;"	kind:function	line:153
+correlation	../app/methods.py	/^def correlation(x, y, tilematrix, layer1, layer2, date1, date2):$/;"	kind:function	line:33
+cv	../app/cvtest.py	/^import cv2 as cv$/;"	kind:namespace	line:3
+cv	../app/methods.py	/^import cv2 as cv$/;"	kind:namespace	line:5
+cvtest.py	../app/cvtest.py	1;"	kind:file	line:1
+function	../app/main.py	/^    def function(*args, **kwargs):$/;"	kind:function	line:19
+gaussian_blur	../app/methods.py	/^def gaussian_blur(r):$/;"	kind:function	line:28
+generic	../app/main.py	/^def generic(tilematrix, x, y):$/;"	kind:function	line:101
+handle_varnish	../app/main.py	/^def handle_varnish(request, response):$/;"	kind:function	line:30
+image	../app/cvtest.py	/^image = imageio.imread(r.content)$/;"	kind:variable	line:8
+index	../app/main.py	/^def index():$/;"	kind:function	line:166
+log_request	../app/main.py	/^def log_request(func):$/;"	kind:function	line:17
+main.py	../app/main.py	1;"	kind:file	line:1
+make_request	../app/main.py	/^def make_request(url, log=True):$/;"	kind:function	line:39
+methods.py	../app/methods.py	1;"	kind:file	line:1
+np	../app/cvtest.py	/^import numpy as np$/;"	kind:namespace	line:4
+np	../app/methods.py	/^import numpy as np$/;"	kind:namespace	line:7
+np	../app/utils.py	/^import numpy as np$/;"	kind:namespace	line:2
+parse_args	../app/main.py	/^def parse_args(args):$/;"	kind:function	line:80
+r	../app/cvtest.py	/^r = requests.get("https:\/\/gibs-b.earthdata.nasa.gov\/wmts\/epsg4326\/best\/wmts.cgi?TIME=2019-/;"	kind:variable	line:6
+read_image	../app/utils.py	/^def read_image(r):$/;"	kind:function	line:12
+single_tile	../app/main.py	/^def single_tile(projection, type, product, date, resolution, tilematrix, x, y, extension):$/;"	kind:function	line:124
+sobel	../app/methods.py	/^def sobel(r):$/;"	kind:function	line:14
+test	../app/main.py	/^def test():$/;"	kind:function	line:176
+utils.py	../app/utils.py	1;"	kind:file	line:1
+write_image	../app/utils.py	/^def write_image(array, r):$/;"	kind:function	line:23

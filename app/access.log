@@ -1,0 +1,520 @@
+---Received request---
+Request URL: /0/0/0, domain: http://onearth-analytics/analytics/, endpoint: generic
+ImmutableMultiDict([('method', 'correlation'), ('layer1', 'MODIS_Terra_SurfaceReflectance_Bands143'), ('layer2', 'MODIS_Terra_CorrectedReflectance_TrueColor'), ('date1', '2017-01-01'), ('date2', '2017-01-13')])
+Requests took: 0.3046846389770508s
+Requests took: 0.09038567543029785s
+image1 shape (13, 512, 512, 3), image2 shape (13, 512, 512, 3)
+output shape: (512, 512, 3)
+---Request ended (Total time: 1.0450029373168945)---
+---Received request---
+Request URL: /0/0/0, domain: http://onearth-analytics/analytics/, endpoint: generic
+ImmutableMultiDict([('method', 'correlation'), ('layer1', 'MODIS_Terra_SurfaceReflectance_Bands143'), ('layer2', 'MODIS_Terra_CorrectedReflectance_TrueColor'), ('date1', '2017-01-01'), ('date2', '2017-01-13')])
+Requests took: 0.1330878734588623s
+Requests took: 0.07107353210449219s
+image1 shape (13, 512, 512, 3), image2 shape (13, 512, 512, 3)
+output shape: (512, 512, 3)
+---Request ended (Total time: 0.7816498279571533)---
+---Received request---
+Request URL: /0/0/0, domain: http://onearth-analytics/analytics/, endpoint: generic
+ImmutableMultiDict([('method', 'correlation'), ('layer1', 'MODIS_Terra_SurfaceReflectance_Bands143'), ('layer2', 'MODIS_Terra_CorrectedReflectance_TrueColor'), ('date1', '2017-01-01'), ('date2', '2017-01-13')])
+Requests took: 0.11791419982910156s
+Requests took: 0.0750129222869873s
+image1 shape (13, 512, 512, 3), image2 shape (13, 512, 512, 3)
+output shape: (512, 512, 3)
+---Request ended (Total time: 0.7561509609222412)---
+---Received request---
+Request URL: /0/0/0, domain: http://onearth-analytics/analytics/, endpoint: generic
+ImmutableMultiDict([('method', 'correlation'), ('layer1', 'MODIS_Terra_SurfaceReflectance_Bands143'), ('layer2', 'MODIS_Terra_CorrectedReflectance_TrueColor'), ('date1', '2017-01-01'), ('date2', '2017-01-13')])
+Requests took: 0.14867329597473145s
+Requests took: 0.08645892143249512s
+image1 shape (13, 512, 512, 3), image2 shape (13, 512, 512, 3)
+output shape: (512, 512, 3)
+---Request ended (Total time: 0.881788969039917)---
+---Received request---
+Request URL: /0/0/0, domain: http://onearth-analytics/analytics/, endpoint: generic
+ImmutableMultiDict([('method', 'correlation'), ('layer1', 'MODIS_Terra_SurfaceReflectance_Bands143'), ('layer2', 'MODIS_Terra_CorrectedReflectance_TrueColor'), ('date1', '2017-01-01'), ('date2', '2017-01-13')])
+Requests took: 0.09598660469055176s
+Requests took: 0.09218287467956543s
+image1 shape (13, 512, 512, 3), image2 shape (13, 512, 512, 3)
+output shape: (512, 512, 3)
+---Request ended (Total time: 0.7918004989624023)---
+---Received request---
+Request URL: /0/0/0, domain: http://onearth-analytics/analytics/, endpoint: generic
+ImmutableMultiDict([('method', 'correlation'), ('layer1', 'MODIS_Terra_SurfaceReflectance_Bands143'), ('layer2', 'MODIS_Terra_CorrectedReflectance_TrueColor'), ('date1', '2017-01-01'), ('date2', '2017-01-13')])
+Requests took: 0.2489795684814453s
+Requests took: 0.10801386833190918s
+Both requests took: 0.6101152896881104s
+image1 shape (13, 512, 512, 3), image2 shape (13, 512, 512, 3)
+output shape: (512, 512, 3). Took 0.014128446578979492s
+---Request ended (Total time: 1.010207176208496)---
+---Received request---
+Request URL: /0/0/0, domain: http://onearth-analytics/analytics/, endpoint: generic
+ImmutableMultiDict([('method', 'correlation'), ('layer1', 'MODIS_Terra_SurfaceReflectance_Bands143'), ('layer2', 'MODIS_Terra_CorrectedReflectance_TrueColor'), ('date1', '2017-01-01'), ('date2', '2017-01-13')])
+Requests took: 0.15914344787597656s
+Requests took: 0.08121991157531738s
+Both requests took: 0.532721996307373s
+image1 shape (13, 512, 512, 3), image2 shape (13, 512, 512, 3)
+output shape: (512, 512, 3). Took 0.0287930965423584s
+---Request ended (Total time: 0.9119219779968262)---
+---Received request---
+Request URL: /0/0/0, domain: http://onearth-analytics/analytics/, endpoint: generic
+ImmutableMultiDict([('method', 'correlation'), ('layer1', 'MODIS_Terra_SurfaceReflectance_Bands143'), ('layer2', 'MODIS_Terra_CorrectedReflectance_TrueColor'), ('date1', '2017-01-01'), ('date2', '2017-01-13')])
+Requests took: 0.27300429344177246s
+Stacking too 0.16306805610656738s
+Requests took: 0.10619497299194336s
+Stacking too 0.12841176986694336s
+Both requests took: 0.697650671005249s
+image1 shape (13, 512, 512, 3), image2 shape (13, 512, 512, 3)
+output shape: (512, 512, 3). Took 0.04017758369445801s
+---Request ended (Total time: 1.136439323425293)---
+---Received request---
+Request URL: /0/0/0, domain: http://onearth-analytics/analytics/, endpoint: generic
+ImmutableMultiDict([('method', 'correlation'), ('layer1', 'MODIS_Terra_SurfaceReflectance_Bands143'), ('layer2', 'MODIS_Terra_CorrectedReflectance_TrueColor'), ('date1', '2017-01-01'), ('date2', '2017-01-13')])
+Requests took: 0.28951120376586914s
+Stacking took 0.1387622356414795s
+Requests took: 0.15717792510986328s
+Stacking took 0.11860060691833496s
+Both requests took: 0.7455477714538574s
+image1 shape (13, 512, 512, 3), image2 shape (13, 512, 512, 3)
+output shape: (512, 512, 3). Took 0.018341779708862305s
+---Request ended (Total time: 1.1199719905853271)---
+---Received request---
+Request URL: /0/0/0, domain: http://onearth-analytics/analytics/, endpoint: generic
+ImmutableMultiDict([('method', 'correlation'), ('layer1', 'MODIS_Terra_SurfaceReflectance_Bands143'), ('layer2', 'MODIS_Terra_CorrectedReflectance_TrueColor'), ('date1', '2017-01-01'), ('date2', '2017-01-13')])
+Requests took: 0.11780977249145508s
+Stacking took 0.11855721473693848s
+Requests took: 0.09028363227844238s
+Stacking took 0.10578417778015137s
+Both requests took: 0.45136380195617676s
+image1 shape (13, 512, 512, 3), image2 shape (13, 512, 512, 3)
+output shape: (512, 512, 3). Took 0.020891904830932617s
+---Request ended (Total time: 0.8209090232849121)---
+---Received request---
+Request URL: /0/0/0, domain: http://onearth-analytics/analytics/, endpoint: generic
+ImmutableMultiDict([('method', 'correlation'), ('layer1', 'MODIS_Terra_SurfaceReflectance_Bands143'), ('layer2', 'MODIS_Terra_CorrectedReflectance_TrueColor'), ('date1', '2017-01-01'), ('date2', '2017-01-13')])
+Requests took: 0.2681865692138672s
+Stacking took 0.14809632301330566s
+Requests took: 0.0848231315612793s
+Stacking took 0.13321733474731445s
+Both requests took: 0.6586439609527588s
+image1 shape (13, 512, 512, 3), image2 shape (13, 512, 512, 3)
+output shape: (512, 512, 3). Correlation took 0.014217138290405273s
+---Request ended (Total time: 1.0440959930419922)---
+---Received request---
+Request URL: /0/0/0, domain: http://onearth-analytics/analytics/, endpoint: generic
+ImmutableMultiDict([('method', 'correlation'), ('layer1', 'MODIS_Terra_SurfaceReflectance_Bands143'), ('layer2', 'MODIS_Terra_CorrectedReflectance_TrueColor'), ('date1', '2017-01-01'), ('date2', '2017-01-13')])
+Requests took: 0.30210256576538086s
+---Received request---
+Request URL: /0/0/0, domain: http://onearth-analytics/analytics/, endpoint: generic
+ImmutableMultiDict([('method', 'correlation'), ('layer1', 'MODIS_Terra_SurfaceReflectance_Bands143'), ('layer2', 'MODIS_Terra_CorrectedReflectance_TrueColor'), ('date1', '2017-01-01'), ('date2', '2017-01-13')])
+Requests took: 0.3201591968536377s
+---Received request---
+---Received request---
+---Received request---
+---Received request---
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/5.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+---Received request---
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/0/0.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/0/1.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+---Received request---
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/7.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/6.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/5.jpeg
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/0/0.jpeg
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/0/1.jpeg
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/1/0.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/7.jpeg
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/6.jpeg
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/1/0.jpeg
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Args: b'method=none&n=32'
+Args: b'method=none&n=32'
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Args: b'method=none&n=32'
+Args: b'method=none&n=32'
+Args: b'method=none&n=32'
+Args: b'method=none&n=32'
+--Subrequest start--
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/5.jpeg
+--Subrequest start--
+Response Length: 0
+Response Status Code: 304
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:38 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '00n3s01mbf8kh'}
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/0/1.jpeg
+Time for request: 0.041954755783081055
+--Subrequest ended--
+--Subrequest start--
+Response Length: 74263
+Status_code 304
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/7.jpeg
+Response Status Code: 200
+---Request ended (Total time: 0.13544440269470215)---
+Response Length: 0
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:38 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Access-Control-Allow-Origin': '*', 'ETag': '028gn01mev48g', 'Content-Length': '74263', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'image/jpeg'}
+Response Status Code: 304
+---Received request---
+--Subrequest start--
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/1/1.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Time for request: 0.0371708869934082
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/0/0.jpeg
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/1/1.jpeg
+Response Length: 79071
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:38 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '00irs01mbgknh'}
+Response Status Code: 200
+--Subrequest ended--
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:38 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Access-Control-Allow-Origin': '*', 'ETag': '02d6v01mesn1h', 'Content-Length': '79071', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'image/jpeg'}
+Args: b'method=none&n=32'
+Time for request: 0.08113217353820801
+--Subrequest ended--
+---Request ended (Total time: 0.17859673500061035)---
+--Subrequest start--
+---Request ended (Total time: 0.19246768951416016)---
+Time for request: 0.07467865943908691
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/1/0.jpeg
+--Subrequest ended--
+---Received request---
+--Subrequest start--
+Status_code 304
+Response Length: 0
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/1/1.jpeg
+---Request ended (Total time: 0.22980308532714844)---
+Response Status Code: 304
+Response Length: 0
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/2.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:38 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '00fvt01mf2nbc'}
+--Subrequest start--
+Response Status Code: 304
+---Received request---
+Time for request: 0.12327408790588379
+---Received request---
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/2.jpeg
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/3.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:38 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '00ef001mf37b9'}
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/6.jpeg
+--Subrequest ended--
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/4.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Time for request: 0.03240609169006348
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/3.jpeg
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Status_code 304
+Response Length: 0
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+--Subrequest ended--
+Args: b'method=none&n=32'
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/4.jpeg
+---Request ended (Total time: 0.2917506694793701)---
+Response Status Code: 304
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:38 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '00kv401mbfvod'}
+Time for request: 0.17791152000427246
+---Received request---
+Status_code 304
+Args: b'method=none&n=32'
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+---Request ended (Total time: 0.20052814483642578)---
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/0/2.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+--Subrequest ended--
+Status_code 304
+---Request ended (Total time: 0.3617081642150879)---
+--Subrequest start--
+Args: b'method=none&n=32'
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/0/2.jpeg
+---Received request---
+---Received request---
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/2.jpeg
+--Subrequest start--
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/1/2.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/0.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Response Length: 0
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/3.jpeg
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/1/2.jpeg
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/0.jpeg
+--Subrequest start--
+Args: b'method=none&n=32'
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Response Length: 0
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Response Status Code: 304
+Args: b'method=none&n=32'
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/4.jpeg
+Response Status Code: 304
+Args: b'method=none&n=32'
+Response Length: 0
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:39 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '00js701mbdreb'}
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:39 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '00hkf01mbd9ps'}
+--Subrequest start--
+--Subrequest start--
+Time for request: 0.050798654556274414
+Response Status Code: 304
+Time for request: 0.04197835922241211
+--Subrequest start--
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/0.jpeg
+--Subrequest ended--
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/1/2.jpeg
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:39 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '00p9v01mbefai'}
+--Subrequest ended--
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/1/0/2.jpeg
+Response Length: 0
+Response Length: 0
+Status_code 304
+Status_code 304
+Response Status Code: 304
+Time for request: 0.03936934471130371
+Response Status Code: 304
+---Request ended (Total time: 0.2815892696380615)---
+Response Length: 43589
+---Request ended (Total time: 0.3339226245880127)---
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:39 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '00nc801mbbq4t'}
+--Subrequest ended--
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:39 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '009u201mf3lq9'}
+Time for request: 0.02615070343017578
+---Received request---
+Time for request: 0.03982138633728027
+---Received request---
+Response Status Code: 200
+Status_code 304
+--Subrequest ended--
+--Subrequest ended--
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/1.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/8.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+---Request ended (Total time: 0.3085784912109375)---
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:39 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Access-Control-Allow-Origin': '*', 'ETag': '01ai501mf1cp7', 'Content-Length': '43589', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'image/jpeg'}
+Status_code 304
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/1.jpeg
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/8.jpeg
+Time for request: 0.062055349349975586
+---Received request---
+---Request ended (Total time: 0.21187996864318848)---
+Status_code 304
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/9.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+---Request ended (Total time: 0.2379920482635498)---
+Args: b'method=none&n=32'
+Args: b'method=none&n=32'
+--Subrequest ended--
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/9.jpeg
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+---Request ended (Total time: 0.3065617084503174)---
+--Subrequest start--
+--Subrequest start--
+Args: b'method=none&n=32'
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/8.jpeg
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/1.jpeg
+Response Length: 0
+Response Length: 0
+--Subrequest start--
+Response Status Code: 304
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/0/9.jpeg
+Response Status Code: 304
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:39 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '00kfd01mbh7jd'}
+Response Length: 0
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:39 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '00o8n01mbchh5'}
+Response Status Code: 304
+Time for request: 0.019794225692749023
+Time for request: 0.02419114112854004
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:39 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '00oih01mbhs2q'}
+--Subrequest ended--
+Time for request: 0.016445636749267578
+--Subrequest ended--
+Status_code 304
+--Subrequest ended--
+Status_code 304
+---Request ended (Total time: 0.15573763847351074)---
+Status_code 304
+---Request ended (Total time: 0.16286945343017578)---
+---Request ended (Total time: 0.12657618522644043)---
+---Received request---
+---Received request---
+---Received request---
+---Received request---
+---Received request---
+---Received request---
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/3/7.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/2/6.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/3/6.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/1/7.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/1/6.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/2/7.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/3/7.jpeg
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/2/6.jpeg
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/1/7.jpeg
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/2/7.jpeg
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/3/6.jpeg
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/1/6.jpeg
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Args: b'method=none&n=32'
+Args: b'method=none&n=32'
+Args: b'method=none&n=32'
+Args: b'method=none&n=32'
+Args: b'method=none&n=32'
+Args: b'method=none&n=32'
+--Subrequest start--
+--Subrequest start--
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/1/6.jpeg
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/1/7.jpeg
+Response Length: 0
+Response Length: 0
+Response Status Code: 304
+--Subrequest start--
+Response Status Code: 304
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:43 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '01i9301mc0o10'}
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/2/7.jpeg
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:43 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '01vtk01mc2aa3'}
+Time for request: 0.021989107131958008
+Time for request: 0.03013753890991211
+--Subrequest start--
+Response Length: 72676
+--Subrequest ended--
+Response Status Code: 200
+Status_code 304
+--Subrequest ended--
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/2/6.jpeg
+---Request ended (Total time: 0.1177666187286377)---
+Status_code 304
+Response Length: 0
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:43 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Access-Control-Allow-Origin': '*', 'ETag': '026v401mcpa9q', 'Content-Length': '72676', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'image/jpeg'}
+Time for request: 0.027341127395629883
+---Request ended (Total time: 0.12711763381958008)---
+---Received request---
+--Subrequest ended--
+Response Status Code: 304
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/3/8.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+---Request ended (Total time: 0.14901971817016602)---
+---Received request---
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/3/8.jpeg
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/2/8.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+---Received request---
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/2/8.jpeg
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/1/8.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:43 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '01uch01mcnbt9'}
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+--Subrequest start--
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/1/8.jpeg
+Args: b'method=none&n=32'
+--Subrequest start--
+Args: b'method=none&n=32'
+Time for request: 0.04108619689941406
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/3/7.jpeg
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/3/6.jpeg
+--Subrequest ended--
+Response Length: 73571
+Response Length: 79543
+Response Status Code: 200
+Status_code 304
+Args: b'method=none&n=32'
+Response Status Code: 200
+--Subrequest start--
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:43 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Access-Control-Allow-Origin': '*', 'ETag': '027r301mdemaf', 'Content-Length': '73571', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'image/jpeg'}
+---Request ended (Total time: 0.27835917472839355)---
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/2/8.jpeg
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:43 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Access-Control-Allow-Origin': '*', 'ETag': '02dln01mdgu5i', 'Content-Length': '79543', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'image/jpeg'}
+Time for request: 0.1291348934173584
+Response Length: 73699
+Time for request: 0.14266037940979004
+--Subrequest ended--
+Response Status Code: 200
+---Received request---
+--Subrequest ended--
+---Request ended (Total time: 0.3610672950744629)---
+---Request ended (Total time: 0.3644108772277832)---
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:43 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Access-Control-Allow-Origin': '*', 'ETag': '027v301mcrh8u', 'Content-Length': '73699', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'image/jpeg'}
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/3/5.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+---Received request---
+---Received request---
+--Subrequest start--
+--Subrequest start--
+Time for request: 0.05341291427612305
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/3/5.jpeg
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/1/5.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+Request URL: /wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/2/5.jpeg, domain: http://onearth-analytics/analytics/, endpoint: single_tile
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/2/5.jpeg
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/3/8.jpeg
+--Subrequest ended--
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+URL: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/1/5.jpeg
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/1/8.jpeg
+---Request ended (Total time: 0.29276585578918457)---
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Projection epsg4326, kind: best, product: MODIS_Terra_CorrectedReflectance_TrueColor, date: 2017-01-01, resolution: 250m
+Response Length: 73828
+Args: b'method=none&n=32'
+Args: b'method=none&n=32'
+Args: b'method=none&n=32'
+Response Status Code: 200
+Response Length: 77674
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:43 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Access-Control-Allow-Origin': '*', 'ETag': '0283401mdjbr9', 'Content-Length': '73828', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'image/jpeg'}
+Time for request: 0.16504859924316406
+Response Status Code: 200
+--Subrequest ended--
+--Subrequest start--
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:43 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Access-Control-Allow-Origin': '*', 'ETag': '02bra01mc4a7n', 'Content-Length': '77674', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'image/jpeg'}
+---Request ended (Total time: 0.4193253517150879)---
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/3/5.jpeg
+Time for request: 0.11726593971252441
+Response Length: 76502
+--Subrequest ended--
+Response Status Code: 200
+--Subrequest start--
+---Request ended (Total time: 0.40896153450012207)---
+--Subrequest start--
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:43 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Access-Control-Allow-Origin': '*', 'ETag': '02amm01mdcbjp', 'Content-Length': '76502', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'image/jpeg'}
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/1/5.jpeg
+Request: http://onearth-tile-services/wmts/epsg4326/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/2017-01-01/250m/3/2/5.jpeg
+Time for request: 0.05481266975402832
+Response Length: 0
+Response Length: 0
+--Subrequest ended--
+Response Status Code: 304
+Response Status Code: 304
+---Request ended (Total time: 0.29012036323547363)---
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:43 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '01q4601mclhp3'}
+Headers:
+{'Date': 'Thu, 20 Jun 2019 23:57:43 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Connection': 'Keep-Alive', 'Keep-Alive': 'timeout=5, max=100', 'ETag': '022qv01mbul61'}
+Time for request: 0.08720827102661133
+Time for request: 0.08280396461486816
+--Subrequest ended--
+--Subrequest ended--
+Status_code 304
+Status_code 304
+---Request ended (Total time: 0.31212449073791504)---
+---Request ended (Total time: 0.28667759895324707)---

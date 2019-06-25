@@ -46,8 +46,9 @@ for file in data:
 
 Script:
 
-ls * > layers.txt
+```ls * > layers.txt```
 
+```python
 for open("layers.txt", "r") as f:
 	layers = f.read().splitlines()
 
@@ -55,6 +56,7 @@ template = '/usr/bin/redis-cli -h $REDIS_HOST -n 0 DEL epsg4326:best:layer:{0}\n
 
 for layer in layers:
 	print(template.format(layer))	
+```
 
 Copy the output into the startup script near a bunch of similar commands.
 

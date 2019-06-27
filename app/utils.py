@@ -7,12 +7,11 @@ import cProfile, pstats, io
 from pstats import SortKey
 
 def ACCESS_LOG(message):
-    pass
-    # with open("/app/access.log", "a+") as log: # note logging is expensive
-    #     log.write(message + "\n")
+    with open("/app/access.txt", "a+") as log: # note logging is expensive
+        log.write(message + "\n")
 
 def ERROR_LOG(message):
-    with open("/app/error.log", "a+") as log:
+    with open("/app/error.txt", "a+") as log:
         log.write(message + "\n")
 
 def read_image(r):

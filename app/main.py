@@ -84,8 +84,28 @@ def parse_args(args):
     else:
         return None, {}
 
+@app.route("/timeSeriesSpark")
+@log_request
+def timeSeries():
+    ACCESS_LOG(str(request.args))
+    ACCESS_LOG(request.full_path)
 
-@app.route("/<int:tilematrix>/<int:x>/<int:y>")
+    url = "https://sealevel-nexus.jpl.nasa.gov" + request.full_path
+    ACCESS_LOG(url)
+    r = requests.get(url)
+
+    if r.status_code != 200:
+        ACCESS_LOG("Request returned with status code {}".format(r.status_code))
+        return render_template('404.html'), 404
+    
+    ACCESS_LOG("---REQUEST SUCCEEDED---")
+    ACCESS_LOG(str(r.json()))
+    ACCESS_LOG(str(r.headers))
+    ACCESS_LOG("---REQUEST DONE---")
+
+    return r.content, r.status_code, dict(r.headers)
+
+@app.route("/generic/<int:tilematrix>/<int:x>/<int:y>")
 @log_request
 def generic(tilematrix, x, y):
     ACCESS_LOG(str(request.args))

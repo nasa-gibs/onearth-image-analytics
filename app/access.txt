@@ -1,9 +1,740 @@
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+https://sealevel-nexus.jpl.nasa.gov/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+https://sealevel-nexus.jpl.nasa.gov/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+{'Date': 'Thu, 27 Jun 2019 03:57:27 GMT', 'Server': 'TornadoServer/5.1', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'X-Frame-Options': 'SAMEORIGIN', 'Access-Control-Allow-Origin': 'https://sealevel.nasa.gov', 'Content-Length': '19731', 'Etag': '"1c06500427f5a174608d3e2891b0eab08c060d91"', 'Content-Type': 'application/json', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive'}
+---Request ended (Total time: 6.16698956489563)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+https://sealevel-nexus.jpl.nasa.gov/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+{'Date': 'Thu, 27 Jun 2019 03:57:32 GMT', 'Server': 'TornadoServer/5.1', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'X-Frame-Options': 'SAMEORIGIN', 'Access-Control-Allow-Origin': 'https://sealevel.nasa.gov', 'Content-Length': '19731', 'Etag': '"1c06500427f5a174608d3e2891b0eab08c060d91"', 'Content-Type': 'application/json', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive'}
+---Request ended (Total time: 5.532715320587158)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1306886400'), ('endTime', '1401580800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1306886400&endTime=1401580800&mask=3&lowPassFilter=False&seasonalFilter=false
+https://sealevel-nexus.jpl.nasa.gov/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1306886400&endTime=1401580800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+{'Date': 'Thu, 27 Jun 2019 03:57:36 GMT', 'Server': 'TornadoServer/5.1', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'X-Frame-Options': 'SAMEORIGIN', 'Access-Control-Allow-Origin': 'https://sealevel.nasa.gov', 'Content-Length': '15049', 'Etag': '"1207ce14d295d77e970416d32278c800ef92d879"', 'Content-Type': 'application/json', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive'}
+---Request ended (Total time: 1.0152647495269775)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1306886400'), ('endTime', '1401580800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1306886400&endTime=1401580800&mask=3&lowPassFilter=False&seasonalFilter=false
+https://sealevel-nexus.jpl.nasa.gov/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1306886400&endTime=1401580800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+{'Date': 'Thu, 27 Jun 2019 03:57:40 GMT', 'Server': 'TornadoServer/5.1', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'X-Frame-Options': 'SAMEORIGIN', 'Access-Control-Allow-Origin': 'https://sealevel.nasa.gov', 'Content-Length': '15049', 'Etag': '"1207ce14d295d77e970416d32278c800ef92d879"', 'Content-Type': 'application/json', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive'}
+---Request ended (Total time: 2.3132286071777344)---
+---REQUEST SUCCEEDED---
+{'Date': 'Thu, 27 Jun 2019 03:57:29 GMT', 'Server': 'TornadoServer/5.1', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'X-Frame-Options': 'SAMEORIGIN', 'Access-Control-Allow-Origin': 'https://sealevel.nasa.gov', 'Content-Length': '27977', 'Etag': '"95495fc5c81f7f966abe7ff0dfced859c6c44fcf"', 'Content-Type': 'application/json', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive'}
+---Request ended (Total time: 25.26147723197937)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+https://sealevel-nexus.jpl.nasa.gov/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1306886400'), ('endTime', '1401580800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1306886400&endTime=1401580800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.025022268295288086)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1306886400'), ('endTime', '1401580800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1306886400&endTime=1401580800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.02336287498474121)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.026699066162109375)---
+---REQUEST SUCCEEDED---
+{'Date': 'Thu, 27 Jun 2019 03:57:53 GMT', 'Server': 'TornadoServer/5.1', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'X-Frame-Options': 'SAMEORIGIN', 'Access-Control-Allow-Origin': 'https://sealevel.nasa.gov', 'Content-Length': '27977', 'Etag': '"95495fc5c81f7f966abe7ff0dfced859c6c44fcf"', 'Content-Type': 'application/json', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive'}
+---Request ended (Total time: 22.25007963180542)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+https://sealevel-nexus.jpl.nasa.gov/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.022196292877197266)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.021668672561645508)---
+---REQUEST SUCCEEDED---
+{'Date': 'Thu, 27 Jun 2019 03:58:15 GMT', 'Server': 'TornadoServer/5.1', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'X-Frame-Options': 'SAMEORIGIN', 'Access-Control-Allow-Origin': 'https://sealevel.nasa.gov', 'Content-Length': '27977', 'Etag': '"95495fc5c81f7f966abe7ff0dfced859c6c44fcf"', 'Content-Type': 'application/json', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive'}
+---Request ended (Total time: 23.84830117225647)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST DONE---
+---Request ended (Total time: 0.03381800651550293)---
+---Request ended (Total time: 0.03303384780883789)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.030833721160888672)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.02804255485534668)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST DONE---
+---Request ended (Total time: 0.03240227699279785)---
+---Request ended (Total time: 0.037009477615356445)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1306886400'), ('endTime', '1401580800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1306886400&endTime=1401580800&mask=3&lowPassFilter=False&seasonalFilter=false
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1306886400'), ('endTime', '1401580800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1306886400&endTime=1401580800&mask=3&lowPassFilter=False&seasonalFilter=false
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1306886400'), ('endTime', '1401580800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1306886400&endTime=1401580800&mask=3&lowPassFilter=False&seasonalFilter=false
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1306886400'), ('endTime', '1401580800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1306886400&endTime=1401580800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.03987479209899902)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.03483176231384277)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.06375455856323242)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.037064552307128906)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.0251462459564209)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.040592193603515625)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.028731107711791992)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.031523704528808594)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.029049396514892578)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+---Received request---
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.04537773132324219)---
+---Request ended (Total time: 0.03798222541809082)---
+---Received request---
 Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
 ImmutableMultiDict([('ds', 'RG_ArgoClim_Psal-1.25-6.25'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1275350400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
 /timeSeriesSpark?ds=RG_ArgoClim_Psal-1.25-6.25&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1275350400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
-https://sealevel-nexus.jpl.nasa.gov/timeSeriesSpark?ds=RG_ArgoClim_Psal-1.25-6.25&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1275350400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
 ---REQUEST SUCCEEDED---
-{'stats': {}, 'meta': [{'shortName': 'RG_ArgoClim_Psal-1.25-6.25', 'bounds': {'west': -26.467181536012703, 'east': 0.5631315220428235, 'north': -11.26263044085647, 'south': -38.85607502095485}, 'time': {'start': 1275350400, 'iso_stop': '2015-06-01T00:00:00+0000', 'iso_start': '2010-06-01T00:00:00+0000', 'stop': 1433116800}}], 'data': [[{'std': 0.07429420002882477, 'cnt': 756, 'iso_time': '2010-06-01T00:00:00+0000', 'min': -0.19900000095367432, 'max': 0.21199999749660492, 'time': 1275350400, 'ds': 0, 'mean': 0.010710206814110279}], [{'std': 0.07261156896334697, 'cnt': 756, 'iso_time': '2010-07-01T00:00:00+0000', 'min': -0.1979999989271164, 'max': 0.17100000381469727, 'time': 1277942400, 'ds': 0, 'mean': 0.0035132868215441704}], [{'std': 0.07532903493857539, 'cnt': 756, 'iso_time': '2010-08-01T00:00:00+0000', 'min': -0.2849999964237213, 'max': 0.164000004529953, 'time': 1280620800, 'ds': 0, 'mean': -0.03771807625889778}], [{'std': 0.07342799529081268, 'cnt': 756, 'iso_time': '2010-09-01T00:00:00+0000', 'min': -0.3109999895095825, 'max': 0.12600000202655792, 'time': 1283299200, 'ds': 0, 'mean': -0.09071213006973267}], [{'std': 0.07365066220928727, 'cnt': 756, 'iso_time': '2010-10-01T00:00:00+0000', 'min': -0.296999990940094, 'max': 0.15399999916553497, 'time': 1285891200, 'ds': 0, 'mean': -0.0903351679444313}], [{'std': 0.07671192223022884, 'cnt': 756, 'iso_time': '2010-11-01T00:00:00+0000', 'min': -0.3149999976158142, 'max': 0.1809999942779541, 'time': 1288569600, 'ds': 0, 'mean': -0.07008707523345947}], [{'std': 0.061229996055862934, 'cnt': 756, 'iso_time': '2010-12-01T00:00:00+0000', 'min': -0.2549999952316284, 'max': 0.12099999934434891, 'time': 1291161600, 'ds': 0, 'mean': -0.037650156766176224}], [{'std': 0.07636198279424561, 'cnt': 756, 'iso_time': '2011-01-01T00:00:00+0000', 'min': -0.1679999977350235, 'max': 0.23199999332427979, 'time': 1293840000, 'ds': 0, 'mean': 0.019834358245134354}], [{'std': 0.07433917067138023, 'cnt': 756, 'iso_time': '2011-02-01T00:00:00+0000', 'min': -0.12099999934434891, 'max': 0.3230000138282776, 'time': 1296518400, 'ds': 0, 'mean': 0.07380376756191254}], [{'std': 0.06552702447408816, 'cnt': 756, 'iso_time': '2011-03-01T00:00:00+0000', 'min': -0.07900000363588333, 'max': 0.3059999942779541, 'time': 1298937600, 'ds': 0, 'mean': 0.09845899790525436}], [{'std': 0.06482571489640576, 'cnt': 756, 'iso_time': '2011-04-01T00:00:00+0000', 'min': -0.12099999934434891, 'max': 0.35100001096725464, 'time': 1301616000, 'ds': 0, 'mean': 0.14616042375564575}], [{'std': 0.062192034473985615, 'cnt': 756, 'iso_time': '2011-05-01T00:00:00+0000', 'min': -0.19699999690055847, 'max': 0.4359999895095825, 'time': 1304208000, 'ds': 0, 'mean': 0.11060842871665955}], [{'std': 0.04963276776251639, 'cnt': 756, 'iso_time': '2011-06-01T00:00:00+0000', 'min': -0.12099999934434891, 'max': 0.23100000619888306, 'time': 1306886400, 'ds': 0, 'mean': 0.06186649203300476}], [{'std': 0.054873210059673154, 'cnt': 756, 'iso_time': '2011-07-01T00:00:00+0000', 'min': -0.28999999165534973, 'max': 0.1979999989271164, 'time': 1309478400, 'ds': 0, 'mean': 0.015927055850625038}], [{'std': 0.06390524990888578, 'cnt': 756, 'iso_time': '2011-08-01T00:00:00+0000', 'min': -0.24699999392032623, 'max': 0.10599999874830246, 'time': 1312156800, 'ds': 0, 'mean': -0.03589564561843872}], [{'std': 0.0670988537308458, 'cnt': 756, 'iso_time': '2011-09-01T00:00:00+0000', 'min': -0.3109999895095825, 'max': 0.11900000274181366, 'time': 1314835200, 'ds': 0, 'mean': -0.07131018489599228}], [{'std': 0.07054740217805268, 'cnt': 756, 'iso_time': '2011-10-01T00:00:00+0000', 'min': -0.3140000104904175, 'max': 0.18199999630451202, 'time': 1317427200, 'ds': 0, 'mean': -0.06774870306253433}], [{'std': 0.06790028577251495, 'cnt': 756, 'iso_time': '2011-11-01T00:00:00+0000', 'min': -0.20600000023841858, 'max': 0.3089999854564667, 'time': 1320105600, 'ds': 0, 'mean': -0.029707863926887512}], [{'std': 0.0658176737995703, 'cnt': 756, 'iso_time': '2011-12-01T00:00:00+0000', 'min': -0.23899999260902405, 'max': 0.2800000011920929, 'time': 1322697600, 'ds': 0, 'mean': -0.010074849240481853}], [{'std': 0.08419145493197029, 'cnt': 756, 'iso_time': '2012-01-01T00:00:00+0000', 'min': -0.17499999701976776, 'max': 0.4909999966621399, 'time': 1325376000, 'ds': 0, 'mean': 0.045324791222810745}], [{'std': 0.12156474495520313, 'cnt': 756, 'iso_time': '2012-02-01T00:00:00+0000', 'min': -0.26100000739097595, 'max': 0.6660000085830688, 'time': 1328054400, 'ds': 0, 'mean': 0.10709851235151291}], [{'std': 0.10182711865863696, 'cnt': 756, 'iso_time': '2012-03-01T00:00:00+0000', 'min': -0.06700000166893005, 'max': 0.5950000286102295, 'time': 1330560000, 'ds': 0, 'mean': 0.1390693485736847}], [{'std': 0.07877474673964777, 'cnt': 756, 'iso_time': '2012-04-01T00:00:00+0000', 'min': -0.12300000339746475, 'max': 0.4169999957084656, 'time': 1333238400, 'ds': 0, 'mean': 0.13340938091278076}], [{'std': 0.0580613250359291, 'cnt': 756, 'iso_time': '2012-05-01T00:00:00+0000', 'min': -0.07100000232458115, 'max': 0.29600000381469727, 'time': 1335830400, 'ds': 0, 'mean': 0.09973364323377609}], [{'std': 0.060386964762283606, 'cnt': 756, 'iso_time': '2012-06-01T00:00:00+0000', 'min': -0.17100000381469727, 'max': 0.25699999928474426, 'time': 1338508800, 'ds': 0, 'mean': 0.05236222594976425}], [{'std': 0.05559106696169455, 'cnt': 756, 'iso_time': '2012-07-01T00:00:00+0000', 'min': -0.36800000071525574, 'max': 0.24300000071525574, 'time': 1341100800, 'ds': 0, 'mean': 0.010319290682673454}], [{'std': 0.06364518286507516, 'cnt': 756, 'iso_time': '2012-08-01T00:00:00+0000', 'min': -0.23499999940395355, 'max': 0.26100000739097595, 'time': 1343779200, 'ds': 0, 'mean': -0.026939164847135544}], [{'std': 0.0703916173966175, 'cnt': 756, 'iso_time': '2012-09-01T00:00:00+0000', 'min': -0.22499999403953552, 'max': 0.1770000010728836, 'time': 1346457600, 'ds': 0, 'mean': -0.07505102455615997}], [{'std': 0.07672330913638478, 'cnt': 756, 'iso_time': '2012-10-01T00:00:00+0000', 'min': -0.23100000619888306, 'max': 0.22200000286102295, 'time': 1349049600, 'ds': 0, 'mean': -0.04773987829685211}], [{'std': 0.08032492475068871, 'cnt': 756, 'iso_time': '2012-11-01T00:00:00+0000', 'min': -0.2639999985694885, 'max': 0.2630000114440918, 'time': 1351728000, 'ds': 0, 'mean': -0.057745058089494705}], [{'std': 0.06419890618482421, 'cnt': 756, 'iso_time': '2012-12-01T00:00:00+0000', 'min': -0.2709999978542328, 'max': 0.10999999940395355, 'time': 1354320000, 'ds': 0, 'mean': -0.04768259450793266}], [{'std': 0.08511585287046453, 'cnt': 756, 'iso_time': '2013-01-01T00:00:00+0000', 'min': -0.2759999930858612, 'max': 0.36899998784065247, 'time': 1356998400, 'ds': 0, 'mean': 0.016890989616513252}], [{'std': 0.10646150836618708, 'cnt': 756, 'iso_time': '2013-02-01T00:00:00+0000', 'min': -0.16899999976158142, 'max': 0.4410000145435333, 'time': 1359676800, 'ds': 0, 'mean': 0.0489666610956192}], [{'std': 0.10363489429727714, 'cnt': 756, 'iso_time': '2013-03-01T00:00:00+0000', 'min': -0.29600000381469727, 'max': 0.460999995470047, 'time': 1362096000, 'ds': 0, 'mean': 0.0623689666390419}], [{'std': 0.0775316015583548, 'cnt': 756, 'iso_time': '2013-04-01T00:00:00+0000', 'min': -0.20900000631809235, 'max': 0.382999986410141, 'time': 1364774400, 'ds': 0, 'mean': 0.05530141294002533}], [{'std': 0.06606140804696882, 'cnt': 756, 'iso_time': '2013-05-01T00:00:00+0000', 'min': -0.16200000047683716, 'max': 0.33799999952316284, 'time': 1367366400, 'ds': 0, 'mean': 0.03520665690302849}], [{'std': 0.07782397985386734, 'cnt': 756, 'iso_time': '2013-06-01T00:00:00+0000', 'min': -0.2669999897480011, 'max': 0.23399999737739563, 'time': 1370044800, 'ds': 0, 'mean': 0.001539211138151586}], [{'std': 0.07451863409222023, 'cnt': 756, 'iso_time': '2013-07-01T00:00:00+0000', 'min': -0.29100000858306885, 'max': 0.30399999022483826, 'time': 1372636800, 'ds': 0, 'mean': -0.027479317039251328}], [{'std': 0.057108596024638046, 'cnt': 756, 'iso_time': '2013-08-01T00:00:00+0000', 'min': -0.2639999985694885, 'max': 0.11599999666213989, 'time': 1375315200, 'ds': 0, 'mean': -0.05515208840370178}], [{'std': 0.05771839621957391, 'cnt': 756, 'iso_time': '2013-09-01T00:00:00+0000', 'min': -0.2540000081062317, 'max': 0.16099999845027924, 'time': 1377993600, 'ds': 0, 'mean': -0.08338622003793716}], [{'std': 0.06224117724173873, 'cnt': 756, 'iso_time': '2013-10-01T00:00:00+0000', 'min': -0.27000001072883606, 'max': 0.10899999737739563, 'time': 1380585600, 'ds': 0, 'mean': -0.09446252882480621}], [{'std': 0.07345632628649634, 'cnt': 756, 'iso_time': '2013-11-01T00:00:00+0000', 'min': -0.3529999852180481, 'max': 0.23000000417232513, 'time': 1383264000, 'ds': 0, 'mean': -0.07347182184457779}], [{'std': 0.0655433822902331, 'cnt': 756, 'iso_time': '2013-12-01T00:00:00+0000', 'min': -0.23399999737739563, 'max': 0.2939999997615814, 'time': 1385856000, 'ds': 0, 'mean': -0.03267195448279381}], [{'std': 0.07583976866774805, 'cnt': 756, 'iso_time': '2014-01-01T00:00:00+0000', 'min': -0.3310000002384186, 'max': 0.20900000631809235, 'time': 1388534400, 'ds': 0, 'mean': 0.0017714023124426603}], [{'std': 0.09679473728303674, 'cnt': 756, 'iso_time': '2014-02-01T00:00:00+0000', 'min': -0.2849999964237213, 'max': 0.29100000858306885, 'time': 1391212800, 'ds': 0, 'mean': 0.08297238498926163}], [{'std': 0.08601019955616915, 'cnt': 756, 'iso_time': '2014-03-01T00:00:00+0000', 'min': -0.24500000476837158, 'max': 0.36500000953674316, 'time': 1393632000, 'ds': 0, 'mean': 0.10376252979040146}], [{'std': 0.07749854899652017, 'cnt': 756, 'iso_time': '2014-04-01T00:00:00+0000', 'min': -0.19900000095367432, 'max': 0.3140000104904175, 'time': 1396310400, 'ds': 0, 'mean': 0.10083561390638351}], [{'std': 0.09141655459617398, 'cnt': 756, 'iso_time': '2014-05-01T00:00:00+0000', 'min': -0.3230000138282776, 'max': 0.2619999945163727, 'time': 1398902400, 'ds': 0, 'mean': 0.060878947377204895}], [{'std': 0.07593794442654288, 'cnt': 756, 'iso_time': '2014-06-01T00:00:00+0000', 'min': -0.28200000524520874, 'max': 0.3050000071525574, 'time': 1401580800, 'ds': 0, 'mean': 0.037312109023332596}], [{'std': 0.06896156994984602, 'cnt': 756, 'iso_time': '2014-07-01T00:00:00+0000', 'min': -0.1720000058412552, 'max': 0.2919999957084656, 'time': 1404172800, 'ds': 0, 'mean': 0.011609820649027824}], [{'std': 0.07721073805358061, 'cnt': 756, 'iso_time': '2014-08-01T00:00:00+0000', 'min': -0.30300000309944153, 'max': 0.210999995470047, 'time': 1406851200, 'ds': 0, 'mean': -0.041726842522621155}], [{'std': 0.08568442611751051, 'cnt': 756, 'iso_time': '2014-09-01T00:00:00+0000', 'min': -0.3709999918937683, 'max': 0.14399999380111694, 'time': 1409529600, 'ds': 0, 'mean': -0.08892086148262024}], [{'std': 0.07047387775087735, 'cnt': 756, 'iso_time': '2014-10-01T00:00:00+0000', 'min': -0.296999990940094, 'max': 0.1420000046491623, 'time': 1412121600, 'ds': 0, 'mean': -0.06665205210447311}], [{'std': 0.05318520875926711, 'cnt': 756, 'iso_time': '2014-11-01T00:00:00+0000', 'min': -0.21799999475479126, 'max': 0.19099999964237213, 'time': 1414800000, 'ds': 0, 'mean': -0.032003775238990784}], [{'std': 0.06610440703301532, 'cnt': 756, 'iso_time': '2014-12-01T00:00:00+0000', 'min': -0.22100000083446503, 'max': 0.19200000166893005, 'time': 1417392000, 'ds': 0, 'mean': -0.0035241227596998215}], [{'std': 0.0784385622111202, 'cnt': 756, 'iso_time': '2015-01-01T00:00:00+0000', 'min': -0.24199999868869781, 'max': 0.25200000405311584, 'time': 1420070400, 'ds': 0, 'mean': 0.025094248354434967}], [{'std': 0.12153860199312146, 'cnt': 756, 'iso_time': '2015-02-01T00:00:00+0000', 'min': -0.23199999332427979, 'max': 0.4909999966621399, 'time': 1422748800, 'ds': 0, 'mean': 0.13625608384609222}], [{'std': 0.11093216991129648, 'cnt': 756, 'iso_time': '2015-03-01T00:00:00+0000', 'min': -0.164000004529953, 'max': 0.4189999997615814, 'time': 1425168000, 'ds': 0, 'mean': 0.1255972683429718}], [{'std': 0.09894303556473115, 'cnt': 756, 'iso_time': '2015-04-01T00:00:00+0000', 'min': -0.19099999964237213, 'max': 0.36500000953674316, 'time': 1427846400, 'ds': 0, 'mean': 0.11390882730484009}], [{'std': 0.10854585915710627, 'cnt': 756, 'iso_time': '2015-05-01T00:00:00+0000', 'min': -0.2370000034570694, 'max': 0.32100000977516174, 'time': 1430438400, 'ds': 0, 'mean': 0.0774281695485115}], [{'std': 0.08824977140826411, 'cnt': 756, 'iso_time': '2015-06-01T00:00:00+0000', 'min': -0.30399999022483826, 'max': 0.2750000059604645, 'time': 1433116800, 'ds': 0, 'mean': 0.02632053941488266}]]}
-{'Date': 'Thu, 27 Jun 2019 03:19:04 GMT', 'Server': 'TornadoServer/5.1', 'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload', 'X-Frame-Options': 'SAMEORIGIN', 'Access-Control-Allow-Origin': 'https://sealevel.nasa.gov', 'Content-Length': '23686', 'Etag': '"57bc5d976e2ad6fad2714b11590102a22b3c6a2d"', 'Content-Type': 'application/json', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive'}
 ---REQUEST DONE---
----Request ended (Total time: 2.476794481277466)---
+---Request ended (Total time: 0.025777816772460938)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.025567293167114258)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.02842545509338379)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.025063514709472656)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.027464866638183594)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.022784709930419922)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.024442672729492188)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+---REQUEST SUCCEEDED---
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST DONE---
+---Request ended (Total time: 0.03829050064086914)---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.05006575584411621)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST DONE---
+---Request ended (Total time: 0.03623223304748535)---
+---Request ended (Total time: 0.03943061828613281)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'RG_ArgoClim_Psal-1.25-6.25'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1275350400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=RG_ArgoClim_Psal-1.25-6.25&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1275350400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.020529508590698242)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST DONE---
+---Request ended (Total time: 0.04087233543395996)---
+---Request ended (Total time: 0.042159080505371094)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.036600589752197266)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.050615549087524414)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+ImmutableMultiDict([('ds', 'oceFWflx_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+/timeSeriesSpark?ds=oceFWflx_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST DONE---
+---Request ended (Total time: 0.03783750534057617)---
+---Request ended (Total time: 0.03783750534057617)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'RG_ArgoClim_Psal-1.25-6.25'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1275350400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=RG_ArgoClim_Psal-1.25-6.25&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1275350400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.02631402015686035)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'CSR-RL05-Mascons_OCEAN'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+ImmutableMultiDict([('ds', 'CSR-RL05-Mascons_OCEAN'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1306886400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=CSR-RL05-Mascons_OCEAN&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=true
+/timeSeriesSpark?ds=CSR-RL05-Mascons_OCEAN&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1306886400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST DONE---
+---Request ended (Total time: 0.02692890167236328)---
+---Request ended (Total time: 0.030283689498901367)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AP_iceshelf_heights'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1420070400'), ('endTime', '1483228800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=AP_iceshelf_heights&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1420070400&endTime=1483228800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.030657529830932617)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AP_iceshelf_heights'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1420070400'), ('endTime', '1483228800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=AP_iceshelf_heights&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1420070400&endTime=1483228800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.027330636978149414)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AP_iceshelf_heights'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1420070400'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=AP_iceshelf_heights&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1420070400&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+ImmutableMultiDict([('ds', 'AP_iceshelf_heights'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1420070400'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=AP_iceshelf_heights&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1420070400&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST SUCCEEDED---
+---Request ended (Total time: 0.027090072631835938)---
+---REQUEST DONE---
+---Request ended (Total time: 0.03763914108276367)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AP_iceshelf_heights'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1420070400'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+ImmutableMultiDict([('ds', 'AP_iceshelf_heights'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1420070400'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=AP_iceshelf_heights&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1420070400&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+/timeSeriesSpark?ds=AP_iceshelf_heights&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1420070400&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST DONE---
+---Request ended (Total time: 0.025948047637939453)---
+---Request ended (Total time: 0.028806447982788086)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'RG_ArgoClim_Psal-1.25-6.25'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1275350400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=RG_ArgoClim_Psal-1.25-6.25&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1275350400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.021350860595703125)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AP_iceshelf_heights'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=AP_iceshelf_heights&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+ImmutableMultiDict([('ds', 'AP_iceshelf_heights'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=AP_iceshelf_heights&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST SUCCEEDED---
+---Request ended (Total time: 0.022983551025390625)---
+---REQUEST DONE---
+---Request ended (Total time: 0.030072689056396484)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AP_iceshelf_heights'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=AP_iceshelf_heights&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.03448963165283203)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AP_iceshelf_heights'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=AP_iceshelf_heights&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.044062137603759766)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'RG_ArgoClim_Psal-1.25-6.25'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1275350400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=RG_ArgoClim_Psal-1.25-6.25&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1275350400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.021044492721557617)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'MXLDEPTH_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=MXLDEPTH_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+---Received request---
+---REQUEST SUCCEEDED---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'MXLDEPTH_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+---REQUEST DONE---
+/timeSeriesSpark?ds=MXLDEPTH_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+---Request ended (Total time: 0.03854799270629883)---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.025801420211791992)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'MXLDEPTH_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+ImmutableMultiDict([('ds', 'MXLDEPTH_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=MXLDEPTH_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+/timeSeriesSpark?ds=MXLDEPTH_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST DONE---
+---Request ended (Total time: 0.035536766052246094)---
+---Request ended (Total time: 0.03823351860046387)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'RG_ArgoClim_Psal-1.25-6.25'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1275350400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=RG_ArgoClim_Psal-1.25-6.25&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1275350400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.02483534812927246)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'RG_ArgoClim_Psal-1.25-6.25'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1275350400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=RG_ArgoClim_Psal-1.25-6.25&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1275350400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.030604839324951172)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'RG_ArgoClim_Psal-1.25-6.25'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1275350400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=RG_ArgoClim_Psal-1.25-6.25&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1275350400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.023574352264404297)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'MXLDEPTH_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+ImmutableMultiDict([('ds', 'MXLDEPTH_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=MXLDEPTH_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+/timeSeriesSpark?ds=MXLDEPTH_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST DONE---
+---Request ended (Total time: 0.03133368492126465)---
+---Request ended (Total time: 0.03330421447753906)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'MXLDEPTH_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=MXLDEPTH_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.02775716781616211)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'MXLDEPTH_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=MXLDEPTH_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.022364139556884766)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'MXLDEPTH_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=MXLDEPTH_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.0320897102355957)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'MXLDEPTH_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=MXLDEPTH_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.028128623962402344)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'RG_ArgoClim_Psal-1.25-6.25'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1275350400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=RG_ArgoClim_Psal-1.25-6.25&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1275350400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.03439211845397949)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'RG_ArgoClim_Psal-1.25-6.25'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1275350400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=RG_ArgoClim_Psal-1.25-6.25&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1275350400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.03105902671813965)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'RG_ArgoClim_Psal-1.25-6.25'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1275350400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=RG_ArgoClim_Psal-1.25-6.25&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1275350400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'RG_ArgoClim_Psal-1.25-6.25'), ('minLat', '-38.85607502095485'), ('minLon', '-26.467181536012703'), ('maxLat', '-11.26263044085647'), ('maxLon', '0.5631315220428235'), ('startTime', '1275350400'), ('endTime', '1433116800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=RG_ArgoClim_Psal-1.25-6.25&minLat=-38.85607502095485&minLon=-26.467181536012703&maxLat=-11.26263044085647&maxLon=0.5631315220428235&startTime=1275350400&endTime=1433116800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.03524589538574219)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'MXLDEPTH_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+ImmutableMultiDict([('ds', 'MXLDEPTH_ECCO_version4_release3'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=MXLDEPTH_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+/timeSeriesSpark?ds=MXLDEPTH_ECCO_version4_release3&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST DONE---
+---Request ended (Total time: 0.03214740753173828)---
+---Request ended (Total time: 0.0359339714050293)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AVHRR_OI-NCEI-L4-GLOB-v2.0'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=AVHRR_OI-NCEI-L4-GLOB-v2.0&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.03337383270263672)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AVHRR_OI-NCEI-L4-GLOB-v2.0'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=AVHRR_OI-NCEI-L4-GLOB-v2.0&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.03537797927856445)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AVHRR_OI-NCEI-L4-GLOB-v2.0'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=AVHRR_OI-NCEI-L4-GLOB-v2.0&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.03580498695373535)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AVHRR_OI-NCEI-L4-GLOB-v2.0'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=AVHRR_OI-NCEI-L4-GLOB-v2.0&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.04815173149108887)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AVHRR_OI-NCEI-L4-GLOB-v2.0'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=AVHRR_OI-NCEI-L4-GLOB-v2.0&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.0431981086730957)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AVHRR_OI-NCEI-L4-GLOB-v2.0'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=AVHRR_OI-NCEI-L4-GLOB-v2.0&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.04443025588989258)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AVHRR_OI-NCEI-L4-GLOB-v2.0'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+/timeSeriesSpark?ds=AVHRR_OI-NCEI-L4-GLOB-v2.0&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.02553415298461914)---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AVHRR_OI-NCEI-L4-GLOB-v2.0'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=AVHRR_OI-NCEI-L4-GLOB-v2.0&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---Request ended (Total time: 0.03253364562988281)---
+---Received request---
+---Received request---
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+Request URL: /timeSeriesSpark, domain: http://onearth-analytics/analytics/, endpoint: timeSeries
+ImmutableMultiDict([('ds', 'AVHRR_OI-NCEI-L4-GLOB-v2.0'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'false')])
+ImmutableMultiDict([('ds', 'AVHRR_OI-NCEI-L4-GLOB-v2.0'), ('minLat', '-40.54546958708329'), ('minLon', '-69.40596009177818'), ('maxLat', '-6.757578264513882'), ('maxLon', '2.6748747297032196'), ('startTime', '1293840000'), ('endTime', '1491004800'), ('mask', '3'), ('lowPassFilter', 'False'), ('seasonalFilter', 'true')])
+/timeSeriesSpark?ds=AVHRR_OI-NCEI-L4-GLOB-v2.0&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=false
+/timeSeriesSpark?ds=AVHRR_OI-NCEI-L4-GLOB-v2.0&minLat=-40.54546958708329&minLon=-69.40596009177818&maxLat=-6.757578264513882&maxLon=2.6748747297032196&startTime=1293840000&endTime=1491004800&mask=3&lowPassFilter=False&seasonalFilter=true
+---REQUEST SUCCEEDED---
+---REQUEST SUCCEEDED---
+---REQUEST DONE---
+---REQUEST DONE---
+---Request ended (Total time: 0.034079551696777344)---
+---Request ended (Total time: 0.03588676452636719)---
+---Received request---
+Request URL: /, domain: http://onearth-analytics/analytics/, endpoint: index
+---Request ended (Total time: 0.025693893432617188)---
+---Received request---
+Request URL: /localhost/analytics/getplot, domain: http://onearth-analytics/analytics/, endpoint: catch_all_debug
+--Subrequest start--
+Request: http://onearth-tile-services/localhost/analytics/getplot
+Response Length: 225
+Response Status Code: 404
+Headers:
+{'Date': 'Mon, 01 Jul 2019 19:20:14 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Content-Length': '225', 'Content-Type': 'text/html; charset=iso-8859-1', 'X-Varnish': '9502832', 'Age': '0', 'Via': '1.1 varnish-v4', 'Connection': 'keep-alive'}
+Time for request: 0.04465985298156738
+--Subrequest ended--
+---Request ended (Total time: 0.07219481468200684)---
+---Received request---
+Request URL: /localhost/analytics/getplot, domain: http://onearth-analytics/analytics/, endpoint: catch_all_debug
+--Subrequest start--
+Request: http://onearth-tile-services/localhost/analytics/getplot
+Response Length: 225
+Response Status Code: 404
+Headers:
+{'Date': 'Mon, 01 Jul 2019 19:20:14 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Content-Length': '225', 'Content-Type': 'text/html; charset=iso-8859-1', 'X-Varnish': '9502835 9502833', 'Age': '19', 'Via': '1.1 varnish-v4', 'Connection': 'keep-alive'}
+Time for request: 0.00765538215637207
+--Subrequest ended--
+---Request ended (Total time: 0.07582759857177734)---
+---Received request---
+Request URL: /localhost/analytics/getplot, domain: http://onearth-analytics/analytics/, endpoint: catch_all_debug
+--Subrequest start--
+Request: http://onearth-tile-services/localhost/analytics/getplot
+Response Length: 225
+Response Status Code: 404
+Headers:
+{'Date': 'Mon, 01 Jul 2019 19:20:14 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Content-Length': '225', 'Content-Type': 'text/html; charset=iso-8859-1', 'X-Varnish': '11501637 9502833', 'Age': '41', 'Via': '1.1 varnish-v4', 'Connection': 'keep-alive'}
+Time for request: 0.02961444854736328
+--Subrequest ended--
+---Request ended (Total time: 0.11859822273254395)---
+---Received request---
+Request URL: /localhost/analytics/getplot, domain: http://onearth-analytics/analytics/, endpoint: catch_all_debug
+--Subrequest start--
+Request: http://onearth-tile-services/localhost/analytics/getplot
+Response Length: 225
+Response Status Code: 404
+Headers:
+{'Date': 'Mon, 01 Jul 2019 19:20:14 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Content-Length': '225', 'Content-Type': 'text/html; charset=iso-8859-1', 'X-Varnish': '11501639 9502833', 'Age': '45', 'Via': '1.1 varnish-v4', 'Connection': 'keep-alive'}
+Time for request: 0.008740425109863281
+--Subrequest ended--
+---Request ended (Total time: 0.0431058406829834)---
+---Received request---
+Request URL: /localhost/analytics/getplot, domain: http://onearth-analytics/analytics/, endpoint: catch_all_debug
+--Subrequest start--
+Request: http://onearth-tile-services/localhost/analytics/getplot
+Response Length: 225
+Response Status Code: 404
+Headers:
+{'Date': 'Mon, 01 Jul 2019 19:20:14 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Content-Length': '225', 'Content-Type': 'text/html; charset=iso-8859-1', 'X-Varnish': '9502837 9502833', 'Age': '56', 'Via': '1.1 varnish-v4', 'Connection': 'keep-alive'}
+Time for request: 0.019989490509033203
+--Subrequest ended--
+---Request ended (Total time: 0.05267596244812012)---
+---Received request---
+Request URL: /localhost/analytics/getplot, domain: http://onearth-analytics/analytics/, endpoint: catch_all_debug
+--Subrequest start--
+Request: http://onearth-tile-services/localhost/analytics/getplot
+Response Length: 225
+Response Status Code: 404
+Headers:
+{'Date': 'Mon, 01 Jul 2019 19:24:01 GMT', 'Server': 'Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips', 'Content-Length': '225', 'Content-Type': 'text/html; charset=iso-8859-1', 'X-Varnish': '9502839', 'Age': '0', 'Via': '1.1 varnish-v4', 'Connection': 'keep-alive'}
+Time for request: 0.01607227325439453
+--Subrequest ended--
+---Request ended (Total time: 0.04372811317443848)---

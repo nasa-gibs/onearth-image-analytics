@@ -3,6 +3,7 @@ from flask_reverse_proxy_fix.middleware import ReverseProxyPrefixFix
 
 from methods import sobel, downsample, blur, gaussian_blur, correlation
 from utils import ACCESS_LOG, ERROR_LOG, timeit, log_request, profileit, timeit
+from timeseries import time_series 
 
 import requests
 import sys
@@ -84,26 +85,98 @@ def parse_args(args):
     else:
         return None, {}
 
+import plotly
+import plotly.plotly as py
+import plotly.graph_objs as go
+import numpy as np
+
+@app.route("/getplot")
+def getplot():
+    # with open("data.json", "rb") as f:
+    #     raw = f.read()
+
+    # data = json.loads(raw)
+    # metadata = data['meta'][0]
+    # data = data['data'] 
+    if not 'layer' in request.args:
+        return render_template('404.html'), 404
+
+    layer = request.args['layer']
+
+    data, dates = time_series([layer], '1', '2017-01-01', '2017-01-14')
+
+    # N = len(data)
+    # x = [entry[0]['iso_time'].split("T")[0] for entry in data] # np.linspace(0, 1, N)
+    # y = np.array([entry[0]['mean'] for entry in data])
+
+    # name = metadata['short_name'].replace("_", " ")
+
+    x = dates
+    y = data[0,:,0] # mean
+    name = layer
+
+    layout = dict(title = 'Image Analytics for {}'.format(name),
+              xaxis = dict(title = 'Date'),
+              yaxis = dict(title = name),
+              height=300,
+              ) 
+
+    # Create a trace
+    trace = go.Scatter(
+        x = x,
+        y = y
+    )
+
+    data = [trace]
+    fig = dict(data=data, layout=layout)
+
+    html = Markup(plotly.offline.plot(fig, include_plotlyjs=False, output_type='div'))
+    return html, {'Access-Control-Allow-Origin': '*'}
+
+import json
 @app.route("/timeSeriesSpark")
 @log_request
 def timeSeries():
     ACCESS_LOG(str(request.args))
     ACCESS_LOG(request.full_path)
 
-    url = "https://sealevel-nexus.jpl.nasa.gov" + request.full_path
-    ACCESS_LOG(url)
-    r = requests.get(url)
+    with open("data.json", "rb") as f:
+        raw = f.read()
 
-    if r.status_code != 200:
-        ACCESS_LOG("Request returned with status code {}".format(r.status_code))
-        return render_template('404.html'), 404
+    data = json.loads(raw)
+
+    # data['meta']['time']['iso_start']
+    # data['meta']['time']['iso_stop']
+
+    # for entry in data['data']:
+    #     for key in entry[0].keys():
+    #         if key in ['std', 'min', 'max', 'mean']:
+    #             entry[0][key] = 5.0
+
+    # ACCESS_LOG(str(data))
+
+    # return jsonify(dict(data)), 200, {"Content-Type" : "application/json"}
+
+    # url = "https://sealevel-nexus.jpl.nasa.gov" + request.full_path
+    # ACCESS_LOG(url)
+    # r = requests.get(url)
+
+    # if r.status_code != 200:
+    #     ACCESS_LOG("Request returned with status code {}".format(r.status_code))
+    #     return render_template('404.html'), 404
     
     ACCESS_LOG("---REQUEST SUCCEEDED---")
-    ACCESS_LOG(str(r.json()))
-    ACCESS_LOG(str(r.headers))
+    # ACCESS_LOG(str(r.json()))
+    # ACCESS_LOG(str(r.headers))
     ACCESS_LOG("---REQUEST DONE---")
 
-    return r.content, r.status_code, dict(r.headers)
+    # with open("out.json", "wb") as f:
+    #     f.write(r.content)
+
+    data['stats'] = {}
+    data['meta'][0]['shortName'] = data['meta'][0]['short_name']
+
+    return json.dumps(data, indent=4), 200, {'Content-Type' : 'application/json', 'Access-Control-Allow-Origin' : '*'}
 
 @app.route("/generic/<int:tilematrix>/<int:x>/<int:y>")
 @log_request

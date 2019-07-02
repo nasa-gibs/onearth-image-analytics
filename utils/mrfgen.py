@@ -195,7 +195,7 @@ def diff_resolution(tiles):
     
     log_info_mssg("Checking for different resolutions in tiles")
     res = ""
-    for tile in tiles:
+    for tile in tiles: # TODO this could be parallelized
         gdalinfo_command_list=['gdalinfo', tile]
         gdalinfo = popen(gdalinfo_command_list,stdout=subprocess.PIPE,stderr=subprocess.PIPE)
         for line in gdalinfo.stdout.readlines():

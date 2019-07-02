@@ -113,7 +113,7 @@ def getplot():
 
     x = dates
     y = data[0,:,0] # mean
-    name = layer
+    name = layer.replace('_', " ")
 
     layout = dict(title = 'Image Analytics for {}'.format(name),
               xaxis = dict(title = 'Date'),

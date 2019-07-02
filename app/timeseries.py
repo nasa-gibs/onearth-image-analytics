@@ -16,7 +16,7 @@ from contextlib import contextmanager
 import traceback
 import sys
 import scipy.stats
-
+from utils import ACCESS_LOG, ERROR_LOG
 
 @contextmanager
 def debug(do_debug):
@@ -33,7 +33,7 @@ def debug(do_debug):
         pass
 
 # capabilities_url = "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/1.0.0/WMTSCapabilities.xml"
-capabilities_url = "http://localhost/wmts/epsg4326/best/1.0.0/WMTSCapabilities.xml"
+capabilities_url = "http://onearth-tile-services/wmts/epsg4326/best/1.0.0/WMTSCapabilities.xml"
 # capabilities_url = "https://sealevel-nexus.jpl.nasa.gov/onearth/wmts/geo/wmts.cgi?Service=wmts&Request=GetCapabilities"
 wmts = WebMapTileService(capabilities_url)
 
@@ -174,7 +174,7 @@ async def get_all_tiles(layer, date, tilematrix):
     width = wmts.tilematrixsets[tilematrixset].tilematrix[tilematrix].matrixheight
 
     tasks = []
-    base_url = "http://localhost/wmts/epsg4326/best/wmts.cgi?"
+    base_url = "http://onearth-tile-services/wmts/epsg4326/best/wmts.cgi?"
 
     start = time.time()
 
@@ -182,6 +182,7 @@ async def get_all_tiles(layer, date, tilematrix):
         for x in range(width):
             for y in range(height): 
                 url = base_url + wmts.buildTileRequest(layer=layer, time=date, row=x, column=y, tilematrix=tilematrix)
+                ACCESS_LOG(url)
                 tasks.append(asyncio.ensure_future(fetch(url, session)))
 
         responses = await asyncio.gather(*tasks)
@@ -311,5 +312,6 @@ def plot(layers, dates, tilematrix, info):
     plt.show()
 
 if __name__ == "__main__":
+    print("running debug!")
     with debug(True):
         time_series(["MODIS_Terra_Brightness_Temp_Band31_Day", "MODIS_Aqua_Brightness_Temp_Band31_Day"], "1", "2017-01-01", "2017-01-14")

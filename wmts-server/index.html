@@ -19,6 +19,8 @@
       }
 
       function loadPlot() {
+        $("#plot").hide();
+        
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
@@ -45,7 +47,7 @@
         <img src="images/logo.png" width="150px" style="padding-top:10px">
     </div>
     <div id="map" class="map" style="height:100%"></div>
-    <div id="container" style="position: fixed; right: 24%; width: 20%; height: 30%; top: 2%">
+    <div id="container" style="position: fixed; right: 24%; width: 20%; height: 10%; top: 2%">
     <button type="button" id="addOSM" class="btn btn-primary btn-xs" style="margin-top: 2%">Add</button>
     <button type="button" id="remOSM" class="btn btn-primary btn-xs" style="margin-top: 2%">Remove</button>
     </div>

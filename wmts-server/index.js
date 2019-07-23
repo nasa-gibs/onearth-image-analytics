@@ -39,9 +39,9 @@ function makeLayer(result, layer_name, date, method) {
 
         options.wrapX = false;
         options.dimensions.Time = date;
-        options.urls[0] = "http://" + options.urls[0].concat("?method=").concat(method).concat("&n=32").replace(/^http\:\/\//, '') // remove the leading http:// (temporarily)
-           .replace(/\/+/g, '/')       // replace consecutive slashes with a single slash
-           .replace(/\/+$/, '');       // remove trailing slashes
+        // options.urls[0] = options.urls[0] // remove the leading http:// (temporarily)
+        //    .replace(/\/+/g, '/')       // replace consecutive slashes with a single slash
+        //    .replace(/\/+$/, '');       // remove trailing slashes
 
 
         console.log(options);
@@ -121,11 +121,11 @@ function createWMTSMap(url, default_layer, date) {
 
 
 /* this is the actual GIBS server */
-/** let map = createWMTSMap(
+let map = createWMTSMap(
     "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi?SERVICE=WMTS&request=GetCapabilities",
     'MODIS_Terra_CorrectedReflectance_TrueColor',
     '2016-06-04'
-) */
+)
 
 /* this is the localhost demo server */
 /* let map = createWMTSMap(
@@ -142,8 +142,8 @@ function createWMTSMap(url, default_layer, date) {
 ) */
 
 
-let map = createWMTSMap(
-    "http://localhost/wmts/epsg4326/best/1.0.0/WMTSCapabilities.xml",
-    'MODIS_Terra_CorrectedReflectance_TrueColor',
-    '2017-01-01'
-)
+// let map = createWMTSMap(
+//     "http://gibs.earthdata.nasa.gov/wmts/epsg4326/best/1.0.0/WMTSCapabilities.xml",
+//     'MODIS_Terra_CorrectedReflectance_TrueColor',
+//     '2017-01-01'
+// )

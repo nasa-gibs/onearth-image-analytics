@@ -1,0 +1,65 @@
+ASTGTM2
+
+1 Core:
+
+real	8m21.415s
+user	8m16.020s
+sys	0m6.215s
+
+3 Cores:
+
+real	3m2.931s
+user	8m18.349s
+sys	0m6.291s
+
+5 Cores:
+
+real	2m8.138s
+user	8m32.749s
+sys	0m23.535s
+
+7 Cores:
+
+real	2m29.913s
+user	8m43.639s
+sys	0m45.111s
+
+9 Cores:
+
+real	5m51.651s
+user	9m12.984s
+sys	3m56.556s
+
+MYR9L:
+
+1 Core:
+
+real	4m51.990s
+user	3m31.541s
+sys	1m5.660s
+
+2 Core:
+
+real	2m9.122s
+user	2m31.015s
+sys	1m0.348s
+
+3 Cores:
+
+real	2m24.042s
+user	2m32.353s
+sys	1m16.709s
+
+5 Cores:
+
+real	3m28.133s
+user	2m43.120s
+sys	2m30.093s
+
+Blue Marble PNG:
+
+8 Cores:
+
+real    16m58.108s
+user    60m49.240s
+sys 7m15.158s

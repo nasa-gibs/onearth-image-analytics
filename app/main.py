@@ -103,7 +103,7 @@ def getplot():
 
     layer = request.args['layer']
 
-    data, dates = time_series([layer], '1', '2017-01-01', '2017-01-14')
+    data, dates, results = time_series([layer], '1', '2017-01-01', '2017-01-14', product="gibs")
 
     # N = len(data)
     # x = [entry[0]['iso_time'].split("T")[0] for entry in data] # np.linspace(0, 1, N)

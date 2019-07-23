@@ -16,7 +16,14 @@ from contextlib import contextmanager
 import traceback
 import sys
 import scipy.stats
-from utils import ACCESS_LOG, ERROR_LOG
+# from utils import ACCESS_LOG, ERROR_LOG
+import dateutil
+
+capabilities_url = "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/1.0.0/WMTSCapabilities.xml"
+# capabilities_url = "http://onearth-tile-services/wmts/epsg4326/best/1.0.0/WMTSCapabilities.xml"
+# capabilities_url = "https://sealevel-nexus.jpl.nasa.gov/onearth/wmts/geo/wmts.cgi?Service=wmts&Request=GetCapabilities"
+
+wmts = WebMapTileService(capabilities_url)
 
 @contextmanager
 def debug(do_debug):
@@ -31,11 +38,6 @@ def debug(do_debug):
             raise e
     finally:
         pass
-
-# capabilities_url = "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/1.0.0/WMTSCapabilities.xml"
-capabilities_url = "http://onearth-tile-services/wmts/epsg4326/best/1.0.0/WMTSCapabilities.xml"
-# capabilities_url = "https://sealevel-nexus.jpl.nasa.gov/onearth/wmts/geo/wmts.cgi?Service=wmts&Request=GetCapabilities"
-wmts = WebMapTileService(capabilities_url)
 
 class CMapCache:
     def __init__(self, max_maps = None):
@@ -78,13 +80,43 @@ def get_tile_wmts(layer, tilematrix = 0, x = 0, y = 0, date="2017-01-01", verbos
 
     return image, response
 
-def get_cmap(layer, nan=True, verbose=False):
+
+def hex_to_rgb(value):
+    return tuple([int(value[i:i+2], 16) for i in (0, 2, 4)])
+
+def get_cmap(*args, product="gibs", **kwargs):
+    if product == "gibs":
+        return get_cmap_gibs(*args, **kwargs)
+    elif product == "sea-level":
+        return get_cmap_sealevel(*args, **kwargs)
+    else:
+        raise ValueError("invalid product for get_cmap call")
+
+# AVHRR_OI-NCEI-L4-GLOB-v2.0.json
+def get_cmap_sealevel(layer, **kwargs):
+    colormap = json.loads(requests.get("https://sealevel.nasa.gov/data-analysis-tool/jpl/assets/colorbars/{}.json".format(layer)).content)
+    colors = colormap['scale']['colors']
+    labels = colormap['scale']['labels']
+    values = colormap['scale']['values']
+
+    cmap = np.nan * np.ones((256, 256, 256), dtype=float)
+
+    for hexcode, values in zip(colors, values):
+        cmap[hex_to_rgb(hexcode)] = (values[0] + values[1]) / 2
+
+    cmap[(0, 0, 0)] = np.nan
+    cmap[(hex_to_rgb("7d00ffFF"))] = np.nan
+
+    map_cache.cache(layer, cmap)
+    return cmap
+
+def get_cmap_gibs(layer, nan=True, verbose=False):
     if map_cache.contains(layer):
         if verbose:
             print("Cache hit for layer {}".format(layer))
         return map_cache.lookup(layer)
 
-    base_url = "https://gibs.earthdata.nasa.gov/colormaps/v1.0/{layer}.xml"
+    base_url = "http://gibs.earthdata.nasa.gov/colormaps/v1.0/{layer}.xml"
     url = base_url.format(layer=layer)
     r = requests.get(url)
     r.raise_for_status()
@@ -104,16 +136,26 @@ def get_cmap(layer, nan=True, verbose=False):
     for entry in cmap_body[1:]:
         color = tuple([int(x) for x in entry['@rgb'].split(",")])
         x = entry['@value'][1:-1].split(",")
-        cmap[color] = (float(x[0]) + float(x[1])) / 2
+        if "INF" in x[0]:
+            if "INF" in x[1]:
+                continue
+            else:
+                cmap[color] = float(x[1])
+        else:
+            if "INF" in x[1]:
+                cmap[color] = float(x[0])
+            else:
+                cmap[color] = (float(x[0]) + float(x[1])) / 2
 
     map_cache.cache(layer, cmap)
     return cmap
 
 def invert_cmap(cmap, image):
+    # np.unique(img[cmap[image[:,:,0], image[:,:,1], image[:,:,2]] == 0][:,0:3], axis = 0)
     return cmap[image[:,:,0], image[:,:,1], image[:,:,2]]
 
 class Tile:
-    def __init__(self, layer, tilematrix = 0, x = 0, y = 0, date="2017-01-01", verbose=False, nan=True, content=None):
+    def __init__(self, layer, tilematrix = 0, x = 0, y = 0, date="2017-01-01", product="gibs", verbose=False, nan=True, content=None):
         self.layer = layer
         self.tilematrix = tilematrix
         self.x = x
@@ -132,7 +174,8 @@ class Tile:
             self.image, self.response = get_tile_wmts(self.layer, tilematrix=self.tilematrix, x=self.x, y=self.y, \
                 date=self.date, verbose=self.verbose)
         
-        self.cmap = get_cmap(self.layer, nan=self.nan, verbose=verbose)
+        self.cmap = get_cmap(self.layer, nan=self.nan, verbose=verbose, product=product)
+        
         self.data = invert_cmap(self.cmap, self.image)
     
     def mean(self):
@@ -161,6 +204,7 @@ class Tile:
 
 import asyncio
 from aiohttp import ClientSession
+import aiohttp
 
 async def fetch(url, session):
     async with session.get(url) as response:
@@ -168,21 +212,24 @@ async def fetch(url, session):
 
 import time
 
-async def get_all_tiles(layer, date, tilematrix):
+async def get_all_tiles(layer, date, tilematrix, product="gibs"):
     tilematrixset = list(wmts[layer].tilematrixsetlinks.keys())[0]
     height = wmts.tilematrixsets[tilematrixset].tilematrix[tilematrix].matrixwidth
     width = wmts.tilematrixsets[tilematrixset].tilematrix[tilematrix].matrixheight
 
     tasks = []
-    base_url = "http://onearth-tile-services/wmts/epsg4326/best/wmts.cgi?"
+    if product == "gibs":
+        base_url = "http://gibs.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi?"
+    elif product == "sea-level":
+        base_url = "http://sealevel-nexus.jpl.nasa.gov/onearth/wmts/geo/wmts.cgi?"
 
     start = time.time()
 
-    async with ClientSession() as session:
+    async with ClientSession(connector=aiohttp.TCPConnector(ssl=False)) as session:
         for x in range(width):
             for y in range(height): 
                 url = base_url + wmts.buildTileRequest(layer=layer, time=date, row=x, column=y, tilematrix=tilematrix)
-                ACCESS_LOG(url)
+                print(url)
                 tasks.append(asyncio.ensure_future(fetch(url, session)))
 
         responses = await asyncio.gather(*tasks)
@@ -192,13 +239,13 @@ async def get_all_tiles(layer, date, tilematrix):
 
     tiles = []
     for response in responses:
-        tiles.append(Tile(layer, date=date, tilematrix=tilematrix, content=response))
+        tiles.append(Tile(layer, date=date, tilematrix=tilematrix, content=response, product=product))
 
     return tiles
 
 
 class Overview:
-    def __init__(self, layer, tilematrix = '0', date="2017-01-01", verbose=False, nan=True, tiles=None):
+    def __init__(self, layer, tilematrix = '0', date="2017-01-01", product="gibs", verbose=False, nan=True, tiles=None):
         self.layer = layer
         self.tilematrix = tilematrix
         self.date = date
@@ -212,13 +259,13 @@ class Overview:
             self.tiles = tiles
         else:
             loop = asyncio.get_event_loop()
-            future = asyncio.ensure_future(get_all_tiles(layer, date, tilematrix))
+            future = asyncio.ensure_future(get_all_tiles(layer, date, tilematrix, product=product))
             loop.run_until_complete(future)
             self.tiles = future.result()
 
     @staticmethod
-    async def get_async(layer, tilematrix = '0', date="2017-01-01", verbose=False, nan=True):
-        tiles = await get_all_tiles(layer, date, tilematrix)
+    async def get_async(layer, tilematrix = '0', date="2017-01-01", verbose=False, nan=True, product="gibs"):
+        tiles = await get_all_tiles(layer, date, tilematrix, product=product)
         return Overview(layer, tilematrix=tilematrix, date=date, verbose=verbose, tiles=tiles)
 
     def mean(self): 
@@ -252,7 +299,7 @@ def format_list(list):
             s += ","
     return s
 
-def time_series(layers, tilematrix : str, date1 : str, date2 : str, verbose = False):
+def time_series(layers, tilematrix : str, date1 : str, date2 : str, verbose = False, increment="daily", product="gibs"):    
     d1 = datetime.datetime.strptime(date1, "%Y-%m-%d")
     d2 = datetime.datetime.strptime(date2, "%Y-%m-%d")
 
@@ -262,11 +309,18 @@ def time_series(layers, tilematrix : str, date1 : str, date2 : str, verbose = Fa
     dates = []
     delta = d2 - d1  # timedelta
 
-    for i in range(delta.days + 1):
-        dates.append((d1 + datetime.timedelta(days=i)).strftime('%Y-%m-%d'))
+    if increment=="daily":
+        for i in range(delta.days + 1):
+            dates.append((d1 + datetime.timedelta(days=i)).strftime('%Y-%m-%d'))
+    if increment=="monthly":
+        for i in range(delta.days // 30 + 1):
+            dates.append((d1 + dateutil.relativedelta.relativedelta(months=i)).strftime('%Y-%m-%d'))
+    if increment=="annual":
+        for i in range(delta.days // 365 + 1):
+            dates.append((d1 + dateutil.relativedelta.relativedelta(years=i)).strftime('%Y-%m-%d'))
 
     data = np.zeros((len(layers), len(dates), 3))
-
+    
     # info = []
 
     for j, layer in enumerate(layers):
@@ -274,7 +328,7 @@ def time_series(layers, tilematrix : str, date1 : str, date2 : str, verbose = Fa
         s = time.time()
 
         for i, date in enumerate(dates):
-            ov = Overview.get_async(layer, date=date, tilematrix=tilematrix, verbose=verbose)
+            ov = Overview.get_async(layer, date=date, tilematrix=tilematrix, verbose=verbose, product=product)
             ovs.append(ov)
 
         loop = asyncio.get_event_loop()
@@ -284,29 +338,30 @@ def time_series(layers, tilematrix : str, date1 : str, date2 : str, verbose = Fa
         e = time.time()
 
         print("HTTP requests for layer {} took: {}s".format(layer, e - s))
- 
+
         s = time.time()
 
-        for i, ov in enumerate(future.result()):
+        results = future.result()
+        for i, ov in enumerate(results):
             data[j, i] = np.array([ov.mean(), ov.min(), ov.max()])
 
         e = time.time()
 
         print("Stats for layer {} took {}s".format(layer, e - s))
 
-    return data, dates
+    return data, dates, results
 
-def plot(layers, dates, tilematrix, info):
+def plot(layers, dates, tilematrix, data):
     plt.figure(figsize=(16,5), dpi=100)
 
     for i, layer in enumerate(layers):
-        plt.plot(dates, info[i,:,0], ".-", label=layer)
+        plt.plot(dates, data[i,:,0], ".-", label=layer)
 
     plt.gca().set(title="Mean Value for {} and for TileMatrix {}".format(format_list(layers), tilematrix), xlabel="Date", ylabel="Data Value")
 
     if len(layers) == 2:
         props = dict(boxstyle='round', facecolor='white', alpha=0.5)
-        plt.gca().text(0.02, 0.98, "Correlation: {}".format(scipy.stats.pearsonr(info[0,:,0], info[1,:,0])[0]), transform=plt.gca().transAxes, fontsize=8, verticalalignment='top', bbox=props)
+        plt.gca().text(0.02, 0.98, "Correlation: {}".format(scipy.stats.pearsonr(data[0,:,0], data[1,:,0])[0]), transform=plt.gca().transAxes, fontsize=8, verticalalignment='top', bbox=props)
 
     plt.legend()
     plt.show()
@@ -314,4 +369,9 @@ def plot(layers, dates, tilematrix, info):
 if __name__ == "__main__":
     print("running debug!")
     with debug(True):
-        time_series(["MODIS_Terra_Brightness_Temp_Band31_Day", "MODIS_Aqua_Brightness_Temp_Band31_Day"], "1", "2017-01-01", "2017-01-14")
+        data, dates, ovs = time_series(["MODIS_Terra_Brightness_Temp_Band31_Day"], "1", "2014-01-01", "2016-01-01", increment="monthly") # , "AIRS_Methane_Volume_Mixing_Ratio_Daily_Day"
+        plot(["MODIS_Terra_Brightness_Temp_Band31_Day"], dates, "2", data) # , "AIRS_Methane_Volume_Mixing_Ratio_Daily_Day"
+        
+    # with debug(True):
+    #     data, dates, ovs = time_series(["AVHRR_OI-NCEI-L4-GLOB-v2.0"], "1", "2017-01-01", "2017-01-14", increment="daily", product="gibs")
+    #     plot(["AVHRR_OI-NCEI-L4-GLOB-v2.0"], dates, "1", data)

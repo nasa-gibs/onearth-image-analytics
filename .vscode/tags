@@ -5,35 +5,375 @@
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/3fdf28b/
-ACCESS_LOG	../app/utils.py	/^def ACCESS_LOG(message):$/;"	kind:function	line:4
-ERROR_LOG	../app/utils.py	/^def ERROR_LOG(message):$/;"	kind:function	line:8
-about	../app/main.py	/^def about():$/;"	kind:function	line:171
-allowed_methods	../app/main.py	/^allowed_methods = {$/;"	kind:variable	line:57
+ACCESS_LOG	../app/utils.py	/^def ACCESS_LOG(message):$/;"	kind:function	line:9
+CMapCache	../app/timeseries.py	/^class CMapCache:$/;"	kind:class	line:40
+DEBUG_LOG	../utils/mrfgen.py	/^def DEBUG_LOG(text):$/;"	kind:function	line:106
+ERROR_LOG	../app/utils.py	/^def ERROR_LOG(message):$/;"	kind:function	line:13
+Overview	../app/timeseries.py	/^class Overview:$/;"	kind:class	line:200
+RGBApng2Palpng_command_list	../utils/mrfgen.py	/^                RGBApng2Palpng_command_list=[script_dir+'RGBApng2Palpng', '-v', '-lut=' + colorm/;"	kind:variable	line:1512
+Tile	../app/timeseries.py	/^class Tile:$/;"	kind:class	line:115
+__init__	../app/timeseries.py	/^    def __init__(self, layer, tilematrix = '0', date="2017-01-01", verbose=False, nan=True, tile/;"	kind:member	line:201
+__init__	../app/timeseries.py	/^    def __init__(self, layer, tilematrix = 0, x = 0, y = 0, date="2017-01-01", verbose=False, na/;"	kind:member	line:116
+__init__	../app/timeseries.py	/^    def __init__(self, max_maps = None):$/;"	kind:member	line:41
+__init__	../utils/rw_lock.py	/^    def __init__(self):$/;"	kind:member	line:4
+about	../app/main.py	/^def about():$/;"	kind:function	line:258
+actual_size	../utils/mrfgen.py	/^    actual_size=max([int(sizeX), int(sizeY)])$/;"	kind:variable	line:2097
+add_transparency	../utils/mrfgen.py	/^                add_transparency = True$/;"	kind:variable	line:1559
+add_transparency	../utils/mrfgen.py	/^add_transparency = False$/;"	kind:variable	line:1409
+addf	../utils/mrfgen.py	/^        addf=get_modification_time(idx_filename)$/;"	kind:variable	line:2155
+all_tiles_filename	../utils/mrfgen.py	/^all_tiles_filename=str().join([working_dir, basename, '_all_tiles.txt'])$/;"	kind:variable	line:1675
+allowed_methods	../app/main.py	/^allowed_methods = {$/;"	kind:variable	line:47
+alltiles	../utils/mrfgen.py	/^        alltiles = alltiles + glob.glob(str().join([input_dir, '*.jpg']))$/;"	kind:variable	line:1423
+alltiles	../utils/mrfgen.py	/^    alltiles = alltiles + glob.glob(str().join([input_dir, '*.tif']))$/;"	kind:variable	line:1427
+alltiles	../utils/mrfgen.py	/^    alltiles = alltiles + glob.glob(str().join([input_dir, '*.tiff']))$/;"	kind:variable	line:1428
+alltiles	../utils/mrfgen.py	/^    alltiles = goodtiles       $/;"	kind:variable	line:1464
+alltiles	../utils/mrfgen.py	/^    alltiles = input_files.split(',')$/;"	kind:variable	line:1420
+alltiles	../utils/mrfgen.py	/^    alltiles=glob.glob(str().join([input_dir, '*.tif*']))$/;"	kind:variable	line:1436
+alltiles	../utils/mrfgen.py	/^alltiles = []$/;"	kind:variable	line:1417
+alltiles	../utils/mrfgen.py	/^alltiles = striptiles$/;"	kind:variable	line:1433
 app	../app/main.py	/^app = Flask(__name__)$/;"	kind:variable	line:13
-blur	../app/methods.py	/^def blur(r):$/;"	kind:function	line:23
-catch_all_debug	../app/main.py	/^def catch_all_debug(path):$/;"	kind:function	line:153
-correlation	../app/methods.py	/^def correlation(x, y, tilematrix, layer1, layer2, date1, date2):$/;"	kind:function	line:33
-cv	../app/cvtest.py	/^import cv2 as cv$/;"	kind:namespace	line:3
+asynctest.py	../utils/asynctest.py	1;"	kind:file	line:1
+at_dest_filename	../utils/mrfgen.py	/^        at_dest_filename=str().join([working_dir, configuration_filename])$/;"	kind:variable	line:1296
+at_dest_preexisting	../utils/mrfgen.py	/^        at_dest_preexisting=glob.glob(at_dest_filename)$/;"	kind:variable	line:1297
+blocksize	../utils/mrfgen.py	/^blocksize=str().join(['BLOCKSIZE=', mrf_blocksize])$/;"	kind:variable	line:1961
+blur	../app/methods.py	/^def blur(r):$/;"	kind:function	line:26
+cache	../app/timeseries.py	/^    def cache(self, name, map):$/;"	kind:member	line:53
+capabilities_url	../app/timeseries.py	/^capabilities_url = "http:\/\/onearth-tile-services\/wmts\/epsg4326\/best\/1.0.0\/WMTSCapabilitie/;"	kind:variable	line:36
+catch_all_debug	../app/main.py	/^def catch_all_debug(path):$/;"	kind:function	line:240
+chunks	../utils/mrfgen.py	/^        def chunks(l, n):$/;"	kind:function	line:572
+clear_cache	../app/timeseries.py	/^    def clear_cache(self):$/;"	kind:member	line:49
+cmap	../utils/colortables.py	/^cmap = np.zeros((256, 256, 256), dtype=float)$/;"	kind:variable	line:13
+colormap	../utils/colortables.py	/^colormap = json.loads(requests.get("https:\/\/sealevel.nasa.gov\/data-analysis-tool\/jpl\/assets/;"	kind:variable	line:5
+colormap	../utils/mrfgen.py	/^     colormap = check_abs_path(colormap)$/;"	kind:variable	line:1285
+colormap2vrt_command_list	../utils/mrfgen.py	/^    colormap2vrt_command_list=[script_dir+'colormap2vrt.py','--colormap',colormap,'--output',new/;"	kind:variable	line:1932
+colormap2vrt_stderr	../utils/mrfgen.py	/^    colormap2vrt_stderr = colormap2vrt_stderr_file.read()$/;"	kind:variable	line:1951
+colormap2vrt_stderr_file	../utils/mrfgen.py	/^    colormap2vrt_stderr_file=open(colormap2vrt_stderr_filename, 'w+')$/;"	kind:variable	line:1948
+colormap2vrt_stderr_filename	../utils/mrfgen.py	/^    colormap2vrt_stderr_filename=str().join([working_dir, basename,'_colormap2vrt_stderr.txt'])$/;"	kind:variable	line:1947
+colors	../utils/colortables.py	/^colors = colormap['scale']['colors']$/;"	kind:variable	line:6
+colortables.py	../utils/colortables.py	1;"	kind:file	line:1
+compare_time	../utils/mrfgen.py	/^compare_time=time.strftime('%Y%m%d.%H%M%S', time.localtime())$/;"	kind:variable	line:2114
+compress	../utils/mrfgen.py	/^    compress=str('COMPRESS=JPEG')$/;"	kind:variable	line:1918
+compress	../utils/mrfgen.py	/^    compress=str('COMPRESS=JPEG')$/;"	kind:variable	line:1920
+compress	../utils/mrfgen.py	/^    compress=str('COMPRESS=LERC')$/;"	kind:variable	line:1924
+compress	../utils/mrfgen.py	/^    compress=str('COMPRESS=PNG')$/;"	kind:variable	line:1913
+compress	../utils/mrfgen.py	/^    compress=str('COMPRESS=PPNG')$/;"	kind:variable	line:1916
+compress	../utils/mrfgen.py	/^    compress=str('COMPRESS=TIF')$/;"	kind:variable	line:1922
+con	../utils/mrfgen.py	/^        mrf, z, zdb_out, con = insert_zdb(mrf, zlevels, zkey, source_url, scale, offset, units)$/;"	kind:variable	line:1760
+con	../utils/mrfgen.py	/^    gdal_mrf_filename, z, zdb_out, con = insert_zdb(mrf_filename, zlevels, zkey, source_url, sca/;"	kind:variable	line:1795
+config_preexisting	../utils/mrfgen.py	/^    config_preexisting=glob.glob(configuration_filename)$/;"	kind:variable	line:1294
+configuration_filename	../utils/mrfgen.py	/^configuration_filename=options.configuration_filename$/;"	kind:variable	line:963
+contains	../app/timeseries.py	/^    def contains(self, name):$/;"	kind:member	line:60
+correlation	../app/methods.py	/^def correlation(x, y, tilematrix, layer1, layer2, date1, date2):$/;"	kind:function	line:72
+count	../utils/mrfgen.py	/^count = collections.defaultdict(int)$/;"	kind:variable	line:104
+create_vrt	../utils/mrfgen.py	/^def create_vrt(basename, empty_tile, epsg, xmin, ymin, xmax, ymax):$/;"	kind:function	line:872
+crop_to_extents	../utils/mrfgen.py	/^def crop_to_extents(tile, tile_extents, projection_extents, working_dir):$/;"	kind:function	line:509
+current_cycle_time	../utils/mrfgen.py	/^current_cycle_time = datetime.datetime.now().strftime("%Y%m%d.%H%M%S.%f")$/;"	kind:variable	line:986
 cv	../app/methods.py	/^import cv2 as cv$/;"	kind:namespace	line:5
-cvtest.py	../app/cvtest.py	1;"	kind:file	line:1
-function	../app/main.py	/^    def function(*args, **kwargs):$/;"	kind:function	line:19
-gaussian_blur	../app/methods.py	/^def gaussian_blur(r):$/;"	kind:function	line:28
-generic	../app/main.py	/^def generic(tilematrix, x, y):$/;"	kind:function	line:101
-handle_varnish	../app/main.py	/^def handle_varnish(request, response):$/;"	kind:function	line:30
-image	../app/cvtest.py	/^image = imageio.imread(r.content)$/;"	kind:variable	line:8
-index	../app/main.py	/^def index():$/;"	kind:function	line:166
-log_request	../app/main.py	/^def log_request(func):$/;"	kind:function	line:17
+data_only	../utils/mrfgen.py	/^data_only = options.data_only$/;"	kind:variable	line:973
+date_of_data	../utils/mrfgen.py	/^    date_of_data           =get_dom_tag_value(dom, 'date_of_data')$/;"	kind:variable	line:1004
+debug	../app/timeseries.py	/^def debug(do_debug):$/;"	kind:function	line:22
+diff_res	../utils/mrfgen.py	/^diff_res, res = diff_resolution(alltiles)$/;"	kind:variable	line:1649
+diff_resolution	../utils/mrfgen.py	/^def diff_resolution(tiles):$/;"	kind:function	line:185
+dom	../utils/mrfgen.py	/^        dom=xml.dom.minidom.parse(mrf_file)$/;"	kind:variable	line:2069
+dom	../utils/mrfgen.py	/^dom=xml.dom.minidom.parse(vrt_filename)$/;"	kind:variable	line:1964
+down_read	../utils/rw_lock.py	/^    def down_read(self):$/;"	kind:member	line:8
+down_write	../utils/rw_lock.py	/^    def down_write(self):$/;"	kind:member	line:19
+downsample	../app/methods.py	/^def downsample(r, n):$/;"	kind:function	line:110
+doy	../utils/mrfgen.py	/^doy=get_doy_string(date_of_data)$/;"	kind:variable	line:1697
+doy	../utils/mrfgen.py	/^doy=str().join([date_of_data[0:4], str(doy)])$/;"	kind:variable	line:1699
+e	../utils/asynctest.py	/^e = time.time()$/;"	kind:variable	line:37
+email_recipient	../utils/mrfgen.py	/^email_recipient=options.email_recipient$/;"	kind:variable	line:969
+email_sender	../utils/mrfgen.py	/^email_sender=options.email_sender$/;"	kind:variable	line:971
+email_server	../utils/mrfgen.py	/^email_server=options.email_server$/;"	kind:variable	line:967
+err	../utils/mrfgen.py	/^        out, err = gdaladdo_process.communicate()$/;"	kind:variable	line:2147
+errors	../utils/mrfgen.py	/^errors = 0$/;"	kind:variable	line:989
+exp	../utils/mrfgen.py	/^                exp=exp+1$/;"	kind:variable	line:2130
+exp	../utils/mrfgen.py	/^            exp=2$/;"	kind:variable	line:2127
+exp	../utils/mrfgen.py	/^    exp=11 #minimum outsize 20480 for EPSG4326_2km$/;"	kind:variable	line:1971
+fetch	../app/timeseries.py	/^async def fetch(url, session):$/;"	kind:function	line:165
+fetch	../utils/asynctest.py	/^async def fetch(url, session):$/;"	kind:function	line:9
+fill	../utils/mrfgen.py	/^                    fill = 0$/;"	kind:variable	line:1509
+format_list	../app/timeseries.py	/^def format_list(list):$/;"	kind:function	line:240
+function	../app/utils.py	/^    def function(*args, **kwargs):$/;"	kind:function	line:33
+function	../app/utils.py	/^    def function(*args, **kwargs):$/;"	kind:function	line:46
+function	../app/utils.py	/^    def function(*args, **kwargs):$/;"	kind:function	line:58
+future	../utils/asynctest.py	/^future = asyncio.ensure_future(make_requests(100))$/;"	kind:variable	line:34
+gaussian_blur	../app/methods.py	/^def gaussian_blur(r):$/;"	kind:function	line:31
+gdal_mrf_filename	../utils/mrfgen.py	/^    gdal_mrf_filename = mrf_filename$/;"	kind:variable	line:1805
+gdal_mrf_filename	../utils/mrfgen.py	/^    gdal_mrf_filename, z, zdb_out, con = insert_zdb(mrf_filename, zlevels, zkey, source_url, sca/;"	kind:variable	line:1795
+gdal_translate	../utils/mrfgen.py	/^            gdal_translate = popen(gdal_translate_command_list,stdout=subprocess.PIPE,stderr=sub/;"	kind:variable	line:1639
+gdal_translate_command_list	../utils/mrfgen.py	/^                    gdal_translate_command_list=['gdal_translate', '-q', '-of', tiff_compress, '/;"	kind:variable	line:1488
+gdal_translate_command_list	../utils/mrfgen.py	/^            gdal_translate_command_list = ['gdal_translate', '-of', 'PNG', tile, output_tile]   /;"	kind:variable	line:1637
+gdal_translate_command_list	../utils/mrfgen.py	/^gdal_translate_command_list=['gdal_translate', '-q', '-of', 'MRF', '-co', compress, '-co', block/;"	kind:variable	line:2005
+gdal_translate_stderr	../utils/mrfgen.py	/^            gdal_translate_stderr = gdal_translate.stderr.read()$/;"	kind:variable	line:1640
+gdal_translate_stderr_file	../utils/mrfgen.py	/^gdal_translate_stderr_file=open(gdal_translate_stderr_filename, 'w')$/;"	kind:variable	line:2032
+gdal_translate_stderr_filename	../utils/mrfgen.py	/^gdal_translate_stderr_filename=str().join([working_dir, basename, '_gdal_translate_stderr.txt'])$/;"	kind:variable	line:2030
+gdal_warp_command_list	../utils/mrfgen.py	/^    gdal_warp_command_list = ['gdalwarp', '-of', 'VRT' ,'-r', reprojection_resampling, '-s_srs',/;"	kind:variable	line:1859
+gdal_warp_command_list	../utils/mrfgen.py	/^    gdal_warp_command_list = ['gdalwarp', '-of', 'VRT' ,'-r', resize_resampling, '-ts', str(targ/;"	kind:variable	line:1868
+gdaladdo_command_list	../utils/mrfgen.py	/^        gdaladdo_command_list=['gdaladdo', '-r', overview_resampling,$/;"	kind:variable	line:2121
+gdaladdo_process	../utils/mrfgen.py	/^        gdaladdo_process = popen(gdaladdo_command_list, stdout=subprocess.PIPE, stderr=gdaladdo_/;"	kind:variable	line:2146
+gdaladdo_stderr_file	../utils/mrfgen.py	/^        gdaladdo_stderr_file=open(gdaladdo_stderr_filename, 'w')$/;"	kind:variable	line:2141
+gdaladdo_stderr_filename	../utils/mrfgen.py	/^        gdaladdo_stderr_filename=str().join([working_dir, basename,$/;"	kind:variable	line:2138
+gdalbuildvrt_command_list	../utils/mrfgen.py	/^gdalbuildvrt_command_list=['gdalbuildvrt','-q', '-te', xmin, ymin, xmax, ymax,'-input_file_list'/;"	kind:variable	line:1818
+gdalbuildvrt_stderr	../utils/mrfgen.py	/^    gdalbuildvrt_stderr=gdalbuildvrt_stderr_file.readlines()$/;"	kind:variable	line:1880
+gdalbuildvrt_stderr_file	../utils/mrfgen.py	/^gdalbuildvrt_stderr_file=open(gdalbuildvrt_stderr_filename, 'w')$/;"	kind:variable	line:1849
+gdalbuildvrt_stderr_filename	../utils/mrfgen.py	/^gdalbuildvrt_stderr_filename=str().join([working_dir, basename,$/;"	kind:variable	line:1846
+gdalinfo	../utils/mrfgen.py	/^                gdalinfo = popen(gdalinfo_command_list,stdout=subprocess.PIPE,stderr=subprocess./;"	kind:variable	line:1623
+gdalinfo	../utils/mrfgen.py	/^            gdalinfo = popen(gdalinfo_command_list,stdout=subprocess.PIPE,stderr=subprocess.PIPE/;"	kind:variable	line:1479
+gdalinfo	../utils/mrfgen.py	/^            gdalinfo = popen(gdalinfo_command_list,stdout=subprocess.PIPE,stderr=subprocess.PIPE/;"	kind:variable	line:1605
+gdalinfo_command_list	../utils/mrfgen.py	/^                gdalinfo_command_list = ['gdalinfo', tile]    $/;"	kind:variable	line:1621
+gdalinfo_command_list	../utils/mrfgen.py	/^            gdalinfo_command_list = ['gdalinfo', tile]    $/;"	kind:variable	line:1603
+gdalinfo_command_list	../utils/mrfgen.py	/^            gdalinfo_command_list=['gdalinfo', tile]$/;"	kind:variable	line:1477
+gdalinfo_out	../utils/mrfgen.py	/^                gdalinfo_out = gdalinfo.stdout.readlines()$/;"	kind:variable	line:1624
+gdalinfo_out	../utils/mrfgen.py	/^            gdalinfo_out = gdalinfo.stdout.readlines()$/;"	kind:variable	line:1606
+gdalinfo_stderr	../utils/mrfgen.py	/^            gdalinfo_stderr = gdalinfo.stderr.read()$/;"	kind:variable	line:1632
+gdalmerge	../utils/mrfgen.py	/^def gdalmerge(mrf, tile, extents, target_x, target_y, mrf_blocksize, xmin, ymin, xmax, ymax, nod/;"	kind:function	line:346
+generic	../app/main.py	/^def generic(tilematrix, x, y):$/;"	kind:function	line:183
+get_all_tiles	../app/timeseries.py	/^async def get_all_tiles(layer, date, tilematrix):$/;"	kind:function	line:171
+get_async	../app/timeseries.py	/^    async def get_async(layer, tilematrix = '0', date="2017-01-01", verbose=False, nan=True):$/;"	kind:member	line:220
+get_cmap	../app/timeseries.py	/^def get_cmap(layer, nan=True, verbose=False):$/;"	kind:function	line:81
+get_image	../app/timeseries.py	/^    def get_image(self):$/;"	kind:member	line:150
+get_mrf_names	../utils/mrfgen.py	/^def get_mrf_names(mrf_data, mrf_name, parameter_name, date_of_data, time_of_data):$/;"	kind:function	line:158
+get_range	../app/methods.py	/^def get_range(x, y, tilematrix, resolution, layer, date1, date2):$/;"	kind:function	line:38
+get_tile_wmts	../app/timeseries.py	/^def get_tile_wmts(layer, tilematrix = 0, x = 0, y = 0, date="2017-01-01", verbose = False):$/;"	kind:function	line:71
+get_url	../app/timeseries.py	/^    def get_url(self):$/;"	kind:member	line:153
+getplot	../app/main.py	/^def getplot():$/;"	kind:function	line:94
+go	../app/main.py	/^import plotly.graph_objs as go$/;"	kind:namespace	line:90
+goodtiles	../utils/mrfgen.py	/^goodtiles = []$/;"	kind:variable	line:1444
+granule_align	../utils/mrfgen.py	/^def granule_align(extents, xmin, ymin, xmax, ymax, target_x, target_y, mrf_blocksize):$/;"	kind:function	line:292
+handle_varnish	../app/main.py	/^def handle_varnish(request, response):$/;"	kind:function	line:17
+has_color_table	../utils/mrfgen.py	/^def has_color_table(tile):$/;"	kind:function	line:276
+hex_to_rgb	../utils/colortables.py	/^def hex_to_rgb(value):$/;"	kind:function	line:10
+i	../utils/rw_lock.py	/^    i = multiprocessing.Value('i', 0, lock=None)$/;"	kind:variable	line:56
+idx_filename	../utils/mrfgen.py	/^    idx_filename = output_dir + idx_filename$/;"	kind:variable	line:1793
+idx_filename	../utils/mrfgen.py	/^    mrf_filename, idx_filename, out_filename, output_aux, output_vrt = get_mrf_names(out_filenam/;"	kind:variable	line:1791
+idx_filename	../utils/mrfgen.py	/^idx_filename=str().join([output_dir, basename, '.idx'])$/;"	kind:variable	line:1706
+idxf	../utils/mrfgen.py	/^idxf=get_modification_time(idx_filename)$/;"	kind:variable	line:2113
+index	../app/main.py	/^def index():$/;"	kind:function	line:253
+input_dir	../utils/mrfgen.py	/^    input_dir = add_trailing_slash(check_abs_path(input_dir))$/;"	kind:variable	line:1261
+input_files	../utils/mrfgen.py	/^                input_files = create_vrt(add_trailing_slash(check_abs_path(working_dir))+basenam/;"	kind:variable	line:1115
+input_files	../utils/mrfgen.py	/^    input_files = input_files.strip()$/;"	kind:variable	line:1419
+insert_method	../utils/mrfgen.py	/^    insert_method = 'NearNb'$/;"	kind:variable	line:1737
+insert_zdb	../utils/mrfgen.py	/^def insert_zdb(mrf, zlevels, zkey, source_url, scale, offset, units):$/;"	kind:function	line:743
+invert_cmap	../app/timeseries.py	/^def invert_cmap(cmap, image):$/;"	kind:function	line:112
+is_global_image	../utils/mrfgen.py	/^def is_global_image(tile, xmin, ymin, xmax, ymax):$/;"	kind:function	line:217
+is_granule_image	../utils/mrfgen.py	/^def is_granule_image(tile):$/;"	kind:function	line:247
+jsonserver.py	../utils/jsonserver.py	1;"	kind:file	line:1
+labels	../utils/colortables.py	/^labels = colormap['scale']['labels']$/;"	kind:variable	line:7
+launch_parallel_mrf_insert	../utils/mrfgen.py	/^def launch_parallel_mrf_insert(tiles, mrf, insert_method, resize_resampling, target_x, target_y,/;"	kind:function	line:536
+lines	../utils/mrfgen.py	/^        lines = mrf_file.readlines()$/;"	kind:variable	line:2085
+lock	../utils/mrfgen.py	/^lock = rw_lock()$/;"	kind:variable	line:534
+lock	../utils/rw_lock.py	/^    lock = rw_lock()$/;"	kind:variable	line:55
+log_filename	../utils/mrfgen.py	/^log_filename=str().join([logfile_dir, basename, '.log'])$/;"	kind:variable	line:1274
+log_request	../app/utils.py	/^def log_request(func):$/;"	kind:function	line:31
+logfile_dir	../utils/mrfgen.py	/^logfile_dir = add_trailing_slash(check_abs_path(logfile_dir))$/;"	kind:variable	line:1263
+logging_level	../utils/mrfgen.py	/^logging_level = options.email_logging_level.upper()$/;"	kind:variable	line:975
+lookup	../app/timeseries.py	/^    def lookup(self, name):$/;"	kind:member	line:63
+lookupEmptyTile	../utils/mrfgen.py	/^def lookupEmptyTile(empty_tile):$/;"	kind:function	line:133
+loop	../utils/asynctest.py	/^loop = asyncio.get_event_loop()$/;"	kind:variable	line:33
 main.py	../app/main.py	1;"	kind:file	line:1
-make_request	../app/main.py	/^def make_request(url, log=True):$/;"	kind:function	line:39
+make_request	../app/main.py	/^def make_request(url, headers=None):$/;"	kind:function	line:26
+make_requests	../utils/asynctest.py	/^async def make_requests(n):$/;"	kind:function	line:13
+map_cache	../app/timeseries.py	/^map_cache = CMapCache()$/;"	kind:variable	line:69
+max	../app/timeseries.py	/^    def max(self):$/;"	kind:member	line:141
+max	../app/timeseries.py	/^    def max(self):$/;"	kind:member	line:227
+mean	../app/timeseries.py	/^    def mean(self): $/;"	kind:member	line:224
+mean	../app/timeseries.py	/^    def mean(self):$/;"	kind:member	line:138
+merge	../utils/mrfgen.py	/^            merge = False$/;"	kind:variable	line:1219
 methods.py	../app/methods.py	1;"	kind:file	line:1
-np	../app/cvtest.py	/^import numpy as np$/;"	kind:namespace	line:4
+min	../app/timeseries.py	/^    def min(self,):$/;"	kind:member	line:144
+min	../app/timeseries.py	/^    def min(self,):$/;"	kind:member	line:230
+mrf	../utils/mrfgen.py	/^        mrf, z, zdb_out, con = insert_zdb(mrf, zlevels, zkey, source_url, scale, offset, units)$/;"	kind:variable	line:1760
+mrf	../utils/mrfgen.py	/^    mrf = mrf_list[0]$/;"	kind:variable	line:1748
+mrf_blocksize	../utils/mrfgen.py	/^    mrf_blocksize          =get_dom_tag_value(dom, 'mrf_blocksize')$/;"	kind:variable	line:1069
+mrf_compression_type	../utils/mrfgen.py	/^                mrf_compression_type = 'PPNG'$/;"	kind:variable	line:1609
+mrf_compression_type	../utils/mrfgen.py	/^    mrf_compression_type   =get_dom_tag_value(dom, 'mrf_compression_type')$/;"	kind:variable	line:1070
+mrf_compression_type	../utils/mrfgen.py	/^mrf_compression_type=string.upper(mrf_compression_type)$/;"	kind:variable	line:1269
+mrf_empty_tile_bytes	../utils/mrfgen.py	/^    mrf_empty_tile_bytes=0$/;"	kind:variable	line:1360
+mrf_empty_tile_bytes	../utils/mrfgen.py	/^    mrf_empty_tile_bytes=os.path.getsize(mrf_empty_tile_filename)$/;"	kind:variable	line:1388
+mrf_empty_tile_filename	../utils/mrfgen.py	/^            mrf_empty_tile_filename = ''$/;"	kind:variable	line:1064
+mrf_empty_tile_filename	../utils/mrfgen.py	/^            mrf_empty_tile_filename=lookupEmptyTile(get_dom_tag_value(dom, 'empty_tile'))$/;"	kind:variable	line:1061
+mrf_empty_tile_what	../utils/mrfgen.py	/^    mrf_empty_tile_what=imghdr.what(mrf_empty_tile_filename)$/;"	kind:variable	line:1369
+mrf_filename	../utils/mrfgen.py	/^    mrf_filename = output_dir + mrf_filename$/;"	kind:variable	line:1792
+mrf_filename	../utils/mrfgen.py	/^    mrf_filename = output_dir+output_mrf$/;"	kind:variable	line:2206
+mrf_filename	../utils/mrfgen.py	/^    mrf_filename, idx_filename, out_filename, output_aux, output_vrt = get_mrf_names(out_filenam/;"	kind:variable	line:1791
+mrf_filename	../utils/mrfgen.py	/^mrf_filename=str().join([output_dir, basename, '.mrf'])$/;"	kind:variable	line:1704
+mrf_list	../utils/mrfgen.py	/^    mrf_list = glob.glob(str().join([input_dir, '*.mrf']))$/;"	kind:variable	line:1745
+mrf_list	../utils/mrfgen.py	/^mrf_list = []$/;"	kind:variable	line:1735
+mrf_output	../utils/mrfgen.py	/^mrf_output=glob.glob(mrf_filename)$/;"	kind:variable	line:2052
+mrf_parallel	../utils/mrfgen.py	/^            mrf_parallel = True$/;"	kind:variable	line:1208
+mrfgen.py	../utils/mrfgen.py	1;"	kind:file	line:1
+mssg	../utils/mrfgen.py	/^                          mssg = "oe_validate_palette.py: " + str(oeValidatePalette.returncode) /;"	kind:variable	line:1578
+mssg	../utils/mrfgen.py	/^                        mssg = "RGBApng2Palpng: " + str(RGBApng2Palpng.returncode) + " colors in/;"	kind:variable	line:1526
+mssg	../utils/mrfgen.py	/^                        mssg = str(RGBApng2Palpng.stderr.readlines()[-1])$/;"	kind:variable	line:1529
+mssg	../utils/mrfgen.py	/^                    mssg = output_tile + " created"$/;"	kind:variable	line:1534
+mssg	../utils/mrfgen.py	/^            mssg='Empty tile format does not match MRF compression type.'$/;"	kind:variable	line:1378
+mssg	../utils/mrfgen.py	/^            mssg='Empty tile format does not match MRF compression type.'$/;"	kind:variable	line:1384
+mssg	../utils/mrfgen.py	/^            mssg=str().join(['Unsuccessful:  gdaladdo   Errors: ', str(err)])$/;"	kind:variable	line:2172
+mssg	../utils/mrfgen.py	/^            mssg=str().join(['gdalbuildvrt ', gdalbuildvrt_stderr[ndx]])$/;"	kind:variable	line:1887
+mssg	../utils/mrfgen.py	/^        mssg = mrf_filename + ' already exists'$/;"	kind:variable	line:2179
+mssg	../utils/mrfgen.py	/^        mssg='Empty tile image format must be either png, jpeg, tiff, or lerc.'$/;"	kind:variable	line:1371
+mssg	../utils/mrfgen.py	/^        mssg=str().join(['Specified empty tile file not found:  ', mrf_empty_tile_filename])$/;"	kind:variable	line:1365
+mssg	../utils/mrfgen.py	/^        mssg=str().join([mrf, ' does not exist'])$/;"	kind:variable	line:1751
+mssg	../utils/mrfgen.py	/^    mssg='Format for <date_of_data> (in mrfgen XML config file) is:  yyyymmdd'$/;"	kind:variable	line:1350
+mssg	../utils/mrfgen.py	/^    mssg='Format for <time_of_data> (in mrfgen XML config file) is:  HHMMSS'$/;"	kind:variable	line:1354
+mssg	../utils/mrfgen.py	/^    mssg=str().join(['Cannot open for write:  ', all_tiles_filename])$/;"	kind:variable	line:1680
+mssg	../utils/mrfgen.py	/^    mssg=str().join(['Cannot read configuration file:  ', $/;"	kind:variable	line:996
+mssg	../utils/mrfgen.py	/^    mssg=str().join(['Cannot read:  ', gdalbuildvrt_stderr_filename])$/;"	kind:variable	line:1892
+mssg	../utils/mrfgen.py	/^    mssg=str().join(['Cannot read:  ', mrf_filename])$/;"	kind:variable	line:2065
+mssg	../utils/mrfgen.py	/^    mssg=str().join(['Fail:  gdal_translate',$/;"	kind:variable	line:2054
+mssg	../utils/mrfgen.py	/^    mssg=str().join(['Fail:  gdalbuildvrt',$/;"	kind:variable	line:1900
+mssg	../utils/mrfgen.py	/^    mssg=str().join(['MRF updated:  ', mrf])$/;"	kind:variable	line:1780
+mssg	../utils/mrfgen.py	/^mssg=str().join(['MRF created:  ', out_filename])$/;"	kind:variable	line:2226
+new_stats	../utils/mrfgen.py	/^        new_stats=os.stat(idx_filename)$/;"	kind:variable	line:2156
+new_vrt_filename	../utils/mrfgen.py	/^    new_vrt_filename = vrt_filename.replace('.vrt','_newcolormap.vrt')$/;"	kind:variable	line:1931
+noaddo	../utils/mrfgen.py	/^            noaddo = False$/;"	kind:variable	line:1193
+nocopy	../utils/mrfgen.py	/^            nocopy = False$/;"	kind:variable	line:1185
+nocopy	../utils/mrfgen.py	/^            nocopy = False$/;"	kind:variable	line:1656
+nocopy	../utils/mrfgen.py	/^            nocopy = False$/;"	kind:variable	line:1664
+nocopy	../utils/mrfgen.py	/^            nocopy = False$/;"	kind:variable	line:1667
+nocopy	../utils/mrfgen.py	/^        nocopy = True$/;"	kind:variable	line:1660
+np	../app/main.py	/^import numpy as np$/;"	kind:namespace	line:91
 np	../app/methods.py	/^import numpy as np$/;"	kind:namespace	line:7
+np	../app/timeseries.py	/^import numpy as np$/;"	kind:namespace	line:4
 np	../app/utils.py	/^import numpy as np$/;"	kind:namespace	line:2
-parse_args	../app/main.py	/^def parse_args(args):$/;"	kind:function	line:80
-r	../app/cvtest.py	/^r = requests.get("https:\/\/gibs-b.earthdata.nasa.gov\/wmts\/epsg4326\/best\/wmts.cgi?TIME=2019-/;"	kind:variable	line:6
-read_image	../app/utils.py	/^def read_image(r):$/;"	kind:function	line:12
-single_tile	../app/main.py	/^def single_tile(projection, type, product, date, resolution, tilematrix, x, y, extension):$/;"	kind:function	line:124
-sobel	../app/methods.py	/^def sobel(r):$/;"	kind:function	line:14
-test	../app/main.py	/^def test():$/;"	kind:function	line:176
+np	../utils/colortables.py	/^import numpy as np$/;"	kind:namespace	line:2
+np	../utils/rw_lock.py	/^import numpy as np$/;"	kind:namespace	line:34
+oe_validate_palette_command_list	../utils/mrfgen.py	/^               oe_validate_palette_command_list=[script_dir + 'oe_validate_palette.py', '-v ', '/;"	kind:variable	line:1566
+offset	../utils/mrfgen.py	/^                    offset = int(offset)$/;"	kind:variable	line:1631
+offset	../utils/mrfgen.py	/^                    offset,scale = line.strip().replace("Offset: ","").replace("Scale:","").spli/;"	kind:variable	line:1628
+offset	../utils/mrfgen.py	/^    offset = 0$/;"	kind:variable	line:1594
+offset	../utils/mrfgen.py	/^offset = None$/;"	kind:variable	line:1413
+old_stats	../utils/mrfgen.py	/^old_stats=os.stat(idx_filename)$/;"	kind:variable	line:2115
+out	../utils/mrfgen.py	/^        out, err = gdaladdo_process.communicate()$/;"	kind:variable	line:2147
+out_filename	../utils/mrfgen.py	/^    mrf_filename, idx_filename, out_filename, output_aux, output_vrt = get_mrf_names(out_filenam/;"	kind:variable	line:1791
+out_filename	../utils/mrfgen.py	/^    out_filename = output_dir + out_filename$/;"	kind:variable	line:1794
+out_filename	../utils/mrfgen.py	/^    out_filename = output_dir+output_data$/;"	kind:variable	line:2207
+out_filename	../utils/mrfgen.py	/^    out_filename=str().join([output_dir, basename, '.lrc'])$/;"	kind:variable	line:1720
+out_filename	../utils/mrfgen.py	/^    out_filename=str().join([output_dir, basename, '.pjg'])$/;"	kind:variable	line:1714
+out_filename	../utils/mrfgen.py	/^    out_filename=str().join([output_dir, basename, '.ppg'])$/;"	kind:variable	line:1711
+out_filename	../utils/mrfgen.py	/^    out_filename=str().join([output_dir, basename, '.ptf'])$/;"	kind:variable	line:1717
+output_aux	../utils/mrfgen.py	/^    mrf_filename, idx_filename, out_filename, output_aux, output_vrt = get_mrf_names(out_filenam/;"	kind:variable	line:1791
+output_aux	../utils/mrfgen.py	/^    output_mrf, output_idx, output_data, output_aux, output_vrt = get_mrf_names(out_filename, mr/;"	kind:variable	line:2189
+output_data	../utils/mrfgen.py	/^    output_mrf, output_idx, output_data, output_aux, output_vrt = get_mrf_names(out_filename, mr/;"	kind:variable	line:2189
+output_dir	../utils/mrfgen.py	/^    output_dir             =get_dom_tag_value(dom, 'output_dir')$/;"	kind:variable	line:1041
+output_dir	../utils/mrfgen.py	/^output_dir = add_trailing_slash(check_abs_path(output_dir))$/;"	kind:variable	line:1262
+output_idx	../utils/mrfgen.py	/^    output_mrf, output_idx, output_data, output_aux, output_vrt = get_mrf_names(out_filename, mr/;"	kind:variable	line:2189
+output_mrf	../utils/mrfgen.py	/^    output_mrf, output_idx, output_data, output_aux, output_vrt = get_mrf_names(out_filename, mr/;"	kind:variable	line:2189
+output_tile	../utils/mrfgen.py	/^                output_tile = working_dir + tile_basename+'_indexed.png'$/;"	kind:variable	line:1503
+output_tile	../utils/mrfgen.py	/^        output_tile = working_dir+tile_basename+'.png'$/;"	kind:variable	line:1599
+output_tile_basename	../utils/mrfgen.py	/^                output_tile_basename, output_tile_extension = os.path.splitext(os.path.basename(/;"	kind:variable	line:1505
+output_tile_extension	../utils/mrfgen.py	/^                output_tile_basename, output_tile_extension = os.path.splitext(os.path.basename(/;"	kind:variable	line:1505
+output_tile_path	../utils/mrfgen.py	/^                output_tile_path = os.path.dirname(output_tile)$/;"	kind:variable	line:1504
+output_vrt	../utils/mrfgen.py	/^    mrf_filename, idx_filename, out_filename, output_aux, output_vrt = get_mrf_names(out_filenam/;"	kind:variable	line:1791
+output_vrt	../utils/mrfgen.py	/^    output_mrf, output_idx, output_data, output_aux, output_vrt = get_mrf_names(out_filename, mr/;"	kind:variable	line:2189
+overview	../utils/mrfgen.py	/^                overview=2**exp$/;"	kind:variable	line:2129
+overview	../utils/mrfgen.py	/^            overview = int(overview_levels[1])\/int(overview_levels[0])$/;"	kind:variable	line:1129
+overview	../utils/mrfgen.py	/^            overview=2$/;"	kind:variable	line:2125
+overview	../utils/mrfgen.py	/^        overview = 2$/;"	kind:variable	line:1135
+parameter_name	../utils/mrfgen.py	/^    parameter_name         =get_dom_tag_value(dom, 'parameter_name')$/;"	kind:variable	line:1003
+parse_args	../app/main.py	/^def parse_args(args):$/;"	kind:function	line:70
+parser	../utils/mrfgen.py	/^parser=OptionParser(version=versionNumber)$/;"	kind:variable	line:941
+plot	../app/timeseries.py	/^def plot(layers, dates, tilematrix, info):$/;"	kind:function	line:299
+plt	../app/timeseries.py	/^import matplotlib.pyplot as plt$/;"	kind:namespace	line:5
+poolcontext	../utils/mrfgen.py	/^def poolcontext(*args, **kwargs):$/;"	kind:function	line:111
+popen	../utils/mrfgen.py	/^def popen(command_list,stdout=subprocess.PIPE,stderr=subprocess.PIPE):$/;"	kind:function	line:116
+procs	../utils/rw_lock.py	/^    procs = []$/;"	kind:variable	line:54
+profile	../utils/mrfgen.py	/^profile = collections.defaultdict(float)$/;"	kind:variable	line:103
+profileit	../app/utils.py	/^def profileit(func):$/;"	kind:function	line:56
+py	../app/main.py	/^import plotly.plotly as py$/;"	kind:namespace	line:89
+quality_prec	../utils/mrfgen.py	/^            quality_prec = '0.001' # default to standard floating point precision if LERC$/;"	kind:variable	line:1167
+rastersize_elements	../utils/mrfgen.py	/^rastersize_elements=dom.getElementsByTagName('VRTDataset')$/;"	kind:variable	line:1965
+read_image	../app/utils.py	/^def read_image(r):$/;"	kind:function	line:17
+reader	../utils/rw_lock.py	/^def reader(lock, value):$/;"	kind:function	line:47
+res	../utils/mrfgen.py	/^diff_res, res = diff_resolution(alltiles)$/;"	kind:variable	line:1649
+resize_resampling	../utils/mrfgen.py	/^            resize_resampling = ''$/;"	kind:variable	line:1146
+run_addo	../utils/mrfgen.py	/^        run_addo = False # don't run gdaladdo if UNIFORM_SCALE has been set$/;"	kind:variable	line:2110
+run_addo	../utils/mrfgen.py	/^run_addo = True$/;"	kind:variable	line:2100
+run_mrf_insert	../utils/mrfgen.py	/^def run_mrf_insert(tiles, mrf, insert_method, resize_resampling, target_x, target_y, mrf_blocksi/;"	kind:function	line:590
+rw_lock	../utils/rw_lock.py	/^class rw_lock:$/;"	kind:class	line:3
+rw_lock.py	../utils/rw_lock.py	1;"	kind:file	line:1
+s	../utils/asynctest.py	/^s = time.time()$/;"	kind:variable	line:32
+scale	../utils/mrfgen.py	/^                    offset,scale = line.strip().replace("Offset: ","").replace("Scale:","").spli/;"	kind:variable	line:1628
+scale	../utils/mrfgen.py	/^                    scale = int(scale)$/;"	kind:variable	line:1630
+scale	../utils/mrfgen.py	/^    scale = 0$/;"	kind:variable	line:1593
+scale	../utils/mrfgen.py	/^scale = None$/;"	kind:variable	line:1412
+scale_offset	../utils/mrfgen.py	/^                    scale_offset = [float(mrf_data_scale), float(mrf_data_offset)]$/;"	kind:variable	line:1616
+script_dir	../utils/mrfgen.py	/^script_dir = add_trailing_slash(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:1266
+send_email	../utils/mrfgen.py	/^send_email=options.send_email$/;"	kind:variable	line:965
+sigevent_url	../utils/mrfgen.py	/^        sigevent_url = (email_server, email_recipient, email_sender, logging_level)$/;"	kind:variable	line:1027
+sigevent_url	../utils/mrfgen.py	/^    sigevent_url = (email_server, email_recipient, email_sender, logging_level)$/;"	kind:variable	line:979
+single_tile	../app/main.py	/^def single_tile(projection, kind, product, date, resolution, tilematrix, x, y, extension):$/;"	kind:function	line:205
+sizeC	../utils/mrfgen.py	/^    sizeC=size_elements[0].getAttribute('c') #bands$/;"	kind:variable	line:2077
+sizeX	../utils/mrfgen.py	/^    sizeX=size_elements[0].getAttribute('x') #width$/;"	kind:variable	line:2075
+sizeY	../utils/mrfgen.py	/^    sizeY=size_elements[0].getAttribute('y') #height$/;"	kind:variable	line:2076
+sizeZ	../utils/mrfgen.py	/^    sizeZ=size_elements[0].getAttribute('z') #bands$/;"	kind:variable	line:2078
+size_elements	../utils/mrfgen.py	/^    size_elements=dom.getElementsByTagName('Size')$/;"	kind:variable	line:2074
+skipped	../utils/mrfgen.py	/^        skipped=gdalbuildvrt_stderr[ndx].find('Warning')$/;"	kind:variable	line:1884
+sobel	../app/methods.py	/^def sobel(r):$/;"	kind:function	line:17
+source_url	../utils/mrfgen.py	/^            source_url = "NONE"$/;"	kind:variable	line:1253
+split_across_antimeridian	../utils/mrfgen.py	/^def split_across_antimeridian(tile, extents, antimeridian, xres, yres, source_epsg, target_epsg,/;"	kind:function	line:439
+strict_palette	../utils/mrfgen.py	/^            strict_palette = False$/;"	kind:variable	line:1227
+striptiles	../utils/mrfgen.py	/^striptiles = []$/;"	kind:variable	line:1430
+target_extents	../utils/mrfgen.py	/^            target_extents = '-20037508.34,-20037508.34,20037508.34,20037508.34'$/;"	kind:variable	line:1103
+target_x	../utils/mrfgen.py	/^        target_x, target_y = outsize.split(' ')$/;"	kind:variable	line:1073
+target_x	../utils/mrfgen.py	/^    target_x=str(10*(2**exp))            $/;"	kind:variable	line:1975
+target_xmax	../utils/mrfgen.py	/^    target_xmin, target_ymin, target_xmax, target_ymax = target_extents.split(',')$/;"	kind:variable	line:1106
+target_xmin	../utils/mrfgen.py	/^    target_xmin, target_ymin, target_xmax, target_ymax = target_extents.split(',')$/;"	kind:variable	line:1106
+target_y	../utils/mrfgen.py	/^        target_x, target_y = outsize.split(' ')$/;"	kind:variable	line:1073
+target_y	../utils/mrfgen.py	/^        target_y = str(int(target_x)\/2)$/;"	kind:variable	line:1867
+target_y	../utils/mrfgen.py	/^        target_y=str(int(float(target_x)*(float(y_size)\/float(x_size))))$/;"	kind:variable	line:1982
+target_y	../utils/mrfgen.py	/^        target_y=y_size$/;"	kind:variable	line:1988
+target_ymax	../utils/mrfgen.py	/^    target_xmin, target_ymin, target_xmax, target_ymax = target_extents.split(',')$/;"	kind:variable	line:1106
+target_ymin	../utils/mrfgen.py	/^    target_xmin, target_ymin, target_xmax, target_ymax = target_extents.split(',')$/;"	kind:variable	line:1106
+temp_tile	../utils/mrfgen.py	/^                    temp_tile = tile$/;"	kind:variable	line:1499
+temp_tile	../utils/mrfgen.py	/^        temp_tile = None$/;"	kind:variable	line:1469
+test	../app/main.py	/^def test():$/;"	kind:function	line:263
+tiff_compress	../utils/mrfgen.py	/^    tiff_compress = "JPEG"$/;"	kind:variable	line:1439
+tile	../utils/mrfgen.py	/^                    tile = working_dir+tile_basename+'.'+str(tiff_compress).lower()$/;"	kind:variable	line:1498
+tile	../utils/mrfgen.py	/^                tile = encoded_tile$/;"	kind:variable	line:1620
+tile_basename	../utils/mrfgen.py	/^        tile_basename, tile_extension = os.path.splitext(os.path.basename(tile))$/;"	kind:variable	line:1471
+tile_basename	../utils/mrfgen.py	/^        tile_basename, tile_extension = os.path.splitext(os.path.basename(tile))$/;"	kind:variable	line:1598
+tile_extension	../utils/mrfgen.py	/^        tile_basename, tile_extension = os.path.splitext(os.path.basename(tile))$/;"	kind:variable	line:1471
+tile_extension	../utils/mrfgen.py	/^        tile_basename, tile_extension = os.path.splitext(os.path.basename(tile))$/;"	kind:variable	line:1598
+tile_path	../utils/mrfgen.py	/^        tile_path = os.path.dirname(tile)$/;"	kind:variable	line:1470
+tile_path	../utils/mrfgen.py	/^        tile_path = os.path.dirname(tile)$/;"	kind:variable	line:1597
+timeSeries	../app/main.py	/^def timeSeries():$/;"	kind:function	line:139
+time_series	../app/timeseries.py	/^def time_series(layers, tilematrix : str, date1 : str, date2 : str, verbose = False):$/;"	kind:function	line:255
+timeit	../app/utils.py	/^def timeit(func):$/;"	kind:function	line:44
+timeout	../utils/mrfgen.py	/^    timeout = time.time() + 30 # 30 second timeout if MRF is still being generated$/;"	kind:variable	line:1749
+timeseries.py	../app/timeseries.py	1;"	kind:file	line:1
+units	../utils/mrfgen.py	/^    units = mrf_data_units$/;"	kind:variable	line:1595
+units	../utils/mrfgen.py	/^units = None$/;"	kind:variable	line:1414
+up_read	../utils/rw_lock.py	/^    def up_read(self):$/;"	kind:member	line:12
+up_write	../utils/rw_lock.py	/^    def up_write(self):$/;"	kind:member	line:27
 utils.py	../app/utils.py	1;"	kind:file	line:1
-write_image	../app/utils.py	/^def write_image(array, r):$/;"	kind:function	line:23
+values	../utils/colortables.py	/^values = colormap['scale']['values']$/;"	kind:variable	line:8
+var	../app/timeseries.py	/^    def var(self):$/;"	kind:member	line:147
+versionNumber	../utils/mrfgen.py	/^versionNumber = '1.3.5'$/;"	kind:variable	line:100
+vrt_filename	../utils/mrfgen.py	/^        vrt_filename = new_vrt_filename$/;"	kind:variable	line:1958
+vrt_filename	../utils/mrfgen.py	/^    vrt_filename = vrt_filename.replace('.vrt','_reproj.vrt')$/;"	kind:variable	line:1862
+vrt_filename	../utils/mrfgen.py	/^    vrt_filename = vrt_filename.replace('.vrt','_resample.vrt')$/;"	kind:variable	line:1871
+vrt_filename	../utils/mrfgen.py	/^vrt_filename=str().join([working_dir, basename, '.vrt'])$/;"	kind:variable	line:1726
+vrt_files	../utils/mrfgen.py	/^vrt_files = glob.glob(str().join([working_dir, basename, '*.vrt']))$/;"	kind:variable	line:2047
+vrt_output	../utils/mrfgen.py	/^vrt_output=glob.glob(vrt_filename)$/;"	kind:variable	line:1898
+vrtf	../utils/mrfgen.py	/^vrtf=get_modification_time(vrt_filename)$/;"	kind:variable	line:1908
+wmts	../app/timeseries.py	/^wmts = WebMapTileService(capabilities_url)$/;"	kind:variable	line:38
+working_dir	../utils/mrfgen.py	/^        working_dir = add_trailing_slash(check_abs_path(working_dir))$/;"	kind:variable	line:1044
+working_dir_files	../utils/mrfgen.py	/^working_dir_files = glob.glob(working_dir+"\/*")$/;"	kind:variable	line:2216
+write_image	../app/utils.py	/^def write_image(array, format = "png"):$/;"	kind:function	line:28
+writer	../utils/rw_lock.py	/^def writer(lock, value):$/;"	kind:function	line:36
+x_size	../utils/mrfgen.py	/^x_size=rastersize_elements[0].getAttribute('rasterXSize') #width$/;"	kind:variable	line:1966
+xmax	../utils/mrfgen.py	/^    xmin, ymin, xmax, ymax = extents.split(',')$/;"	kind:variable	line:1098
+xmin	../utils/mrfgen.py	/^    xmin, ymin, xmax, ymax = extents.split(',')$/;"	kind:variable	line:1098
+xres	../utils/mrfgen.py	/^    xres = repr(abs((float(xmax)-float(xmin))\/float(target_x)))$/;"	kind:variable	line:1821
+y_size	../utils/mrfgen.py	/^y_size=rastersize_elements[0].getAttribute('rasterYSize') #height$/;"	kind:variable	line:1967
+ymax	../utils/mrfgen.py	/^    xmin, ymin, xmax, ymax = extents.split(',')$/;"	kind:variable	line:1098
+ymin	../utils/mrfgen.py	/^    xmin, ymin, xmax, ymax = extents.split(',')$/;"	kind:variable	line:1098
+yres	../utils/mrfgen.py	/^        yres = repr(abs((float(ymin)-float(ymax))\/float(target_y)))$/;"	kind:variable	line:1823
+z	../utils/mrfgen.py	/^        mrf, z, zdb_out, con = insert_zdb(mrf, zlevels, zkey, source_url, scale, offset, units)$/;"	kind:variable	line:1760
+z	../utils/mrfgen.py	/^    gdal_mrf_filename, z, zdb_out, con = insert_zdb(mrf_filename, zlevels, zkey, source_url, sca/;"	kind:variable	line:1795
+z	../utils/mrfgen.py	/^    z = None$/;"	kind:variable	line:1176
+zdb_out	../utils/mrfgen.py	/^        mrf, z, zdb_out, con = insert_zdb(mrf, zlevels, zkey, source_url, scale, offset, units)$/;"	kind:variable	line:1760
+zdb_out	../utils/mrfgen.py	/^    gdal_mrf_filename, z, zdb_out, con = insert_zdb(mrf_filename, zlevels, zkey, source_url, sca/;"	kind:variable	line:1795
+zkey_type	../utils/mrfgen.py	/^    zkey_type = "string" # default to only string for now$/;"	kind:variable	line:1177

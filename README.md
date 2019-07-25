@@ -2,76 +2,36 @@
 
 This is a Flask web-server integrated into the OnEarth Docker network for serving
 on-demand analytics from GIBS imagery. This includes image filters, correlations,
-time-series data, and more.
+time-series data, and more. 
 
 ## Installation
 
 Read the docker README for installation advice. The easiest way is to change the backend URL
-to the public GIBS server at (https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi). To run locally,
+to the public GIBS server at (https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi). Simply edit the
+backend in `wmts/index.js` to the above endpoint, and change links in the `app/main.py` and `app/tileseries.py` utilities.
 
-1. In onearth-tile-services, copy data to /onearth/layers/epsg4326/ and /onearth/idx/epsg4326/ using a Python script to unzip the files.
+To run locally, you have to run the entire OnEarth Docker network and load data local into the various services. After acquiring
+some MRF data and configuration XML files for OnEarth, you need to format everything to work locally. The instructions in `setup.md`
+give a pretty good overview of what's necessary, but there's a painful trial and error process involved too. 
 
-```ls */*/*.idx.tgz >> files.txt```
+## Overview
 
-then
+### frontend
 
-```python
-import subprocess
-import os
+This directory hosts a frontend OpenLayers website which allows you to make requests to the WMTS tile service and analytic service
+hosted in `app`. This can be setup with `npm install` and `npm start`. Basically just follow the basic OpenLayers installation.
 
-with open("files", "r") as f:
-	layers = f.read().splitlines()
+### app
 
-print("current directory is {}".format(os.getcwd()))
+This directory contains a WMTS tile service capable of transforming data with a variety of filters and performing on-demand analytics
+on raw image data, including time-series analysis. `timeseries.py` is the body of the code for doing on-demand analysis.
 
-for file in data:
-	try:
-		command = "cd {} && tar -xvzf {}".format(os.getcwd(), file)
-		print(command)
-		cmd = subprocess.Popen(command, stderr=subprocess.PIPE, stdout=subprocess.PIPE, shell=True)
-		name = cmd.stdout.readlines()
-		name = name[0].decode('utf-8').strip()
-		os.rename(name, file.rstrip(".tgz"))
-	except:
-		print("file {} failed".format(file))
-```
+### docker
 
+This contains the Dockerfile and setup scripts for this application, called `onearth-analytics`, which hooks into an existing Docker
+network (oe2) run by the OnEarth service.
 
-2. In onearth-tile-services, copy configs to /etc/onearth/config/layers/epsg4326/best/ and use sed script to update data_path.
+### docs
 
-```sed "s/data_file_uri: '\/{S3_URL}\/epsg4326/data_file_path: '\/onearth\/layers\/epsg4326/g" /etc/onearth/config/layers/epsg4326/best/MODIS_*.yaml```
-
-3. Rerun the setup script for configuring the epsg4326 endpoint. Then restart the server, ideally also setting the debug flag to true in the startup script.
-4. In time-services, modify the startup script to include the correct snapping range. Use the following script:
-
-Script:
-
-```ls * > layers.txt```
-
-```python
-for open("layers.txt", "r") as f:
-	layers = f.read().splitlines()
-
-template = '/usr/bin/redis-cli -h $REDIS_HOST -n 0 DEL epsg4326:best:layer:{0}\n/usr/bin/redis-cli -h $REDIS_HOST -n 0 SET epsg4326:best:layer:{0}:default "2017-01-01"\n/usr/bin/redis-cli -h $REDIS_HOST -n 0 SADD epsg4326:best:layer:{0}:periods "2017-01-01/2017-01-14/P1D"'
-
-for layer in layers:
-	print(template.format(layer))	
-```
-
-Copy the output into the startup script near a bunch of similar commands.
-
-5. Set debug flag to true and restart, rerunning the startup script.
-6. In capabilities, copy all the config files to the right places and rerun the startup script. Same process as for tile-services.
-
-The following aliases might be useful:
-
-```bash
-alias www='cd /var/www/html/wmts/epsg4326/best/'
-alias config='cd /etc/onearth/config/layers/epsg4326/best/'
-alias idx='cd /onearth/idx/epsg4326/'
-alias data='cd /onearth/layers/epsg4326/'
-alias aqua='cd MODIS_Aqua_Brightness_Temp_Band31_Day'
-alias terra='cd MODIS_Terra_Brightness_Temp_Band31_Day'
-```
-
-Rerun the configuration script and restart everything.
+This contains documentation for this code, OnEarth in general, and the MRF file format. It also contains benchmarks for MRF generation
+improvements and the VarnishCache implementation, which could be a good reverse cache for OnEarth/GIBS.

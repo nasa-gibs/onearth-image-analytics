@@ -46,4 +46,9 @@ Onearth-WMS is a container which supports WMS requests, an alternative API for t
 
 # MRF Generation
 
-The MRF generation process takes a raw image or a set of image tiles or granules and creates a large MRF file with the image split into small tiles and rescaled to a variety of resolutions for use in an image pyramid. The progress largely uses the mrfgen.py script which itself uses GDAL. 
+The MRF generation process takes a raw image or a set of image tiles or granules and creates a large MRF file with the image split into small tiles and rescaled to a variety of resolutions for use in an image pyramid. The progress largely uses the mrfgen.py script which itself uses GDAL. The MRF format itself contains 3 files, the .mrf file which describes the raster geographically, including
+what kind of image format is used internally and what projection is used. The .idx file is an array of 8-byte longs in the format
+`[offset, size]`, i.e. one long describing the offset of a given tile in the data file, the next long describing how much data to
+read. Finally, the .pjg or .ppg or .ptf file is a data file containing a large number of concatenated image files in a common image
+format (JPEG, PNG, and TIFF respectively). Generally the MRF is read in row-major order, and the position of a given tile is infered
+from the MRF configuration.

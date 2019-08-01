@@ -6,13 +6,25 @@ time-series data, and more.
 
 ## Installation
 
-Read the docker README for installation advice. The easiest way is to change the backend URL
-to the public GIBS server at (https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi). Simply edit the
-backend in `wmts/index.js` to the above endpoint, and change links in the `app/main.py` and `app/tileseries.py` utilities.
+Read the docker README for installation advice. The application can be run as a Docker container by simply running `./run.sh`,
+but it is set up to accept requests passed through the OnEarth frontend. To run fully, the simplest system is:
 
-To run locally, you have to run the entire OnEarth Docker network and load data local into the various services. After acquiring
-some MRF data and configuration XML files for OnEarth, you need to format everything to work locally. The instructions in `setup.md`
-give a pretty good overview of what's necessary, but there's a painful trial and error process involved too. 
+1. Clone the OnEarth repository from https://github.com/nasa-gibs/onearth
+2. Launch the various docker contains with the start script.
+3. Connect to the `onearth-demo` container and edit the `/etc/httpd/conf.d/oe2_demo.conf` by adding the lines
+
+```
+ProxyPass /analytics http://onearth-analytics
+ProxyPassReverse /analytics http://onearth-analytics
+```
+
+4. Launch the `onearth-analytics` container with `./run.sh`. 
+5. Launch the frontend from the `frontend` directory with `frontend/run.sh`. 
+
+This will work properly, but it will be slow, because it has to pull all of the data remotely from the OnEarth servers, instead of 
+over a local network as part of OnEarth. This also works with OnEarth running locally, and instructions for configuring
+that can be found in the `docs` folder. With that running, just change the directories in `app/main.py` and `frontend/index.js`
+to point to the localhost address of OnEarth.
 
 ## Overview
 

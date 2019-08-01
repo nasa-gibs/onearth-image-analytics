@@ -37,6 +37,9 @@ hosted in `app`. This can be setup with `npm install` and `npm start`. Basically
 
 This directory contains a WMTS tile service capable of transforming data with a variety of filters and performing on-demand analytics
 on raw image data, including time-series analysis. `timeseries.py` is the body of the code for doing on-demand analysis.
+This is not the best code in the world. I was experimenting with async coding in Python, and the quality and speed of the
+code didn't benefit. This could be vastly improved with a single asynchronous system for making tile requests. The Colormap
+parsing utility also fails from some colormaps in different formats, so this could be made more robust to work for all products.
 
 ### docker
 

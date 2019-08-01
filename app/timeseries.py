@@ -70,7 +70,7 @@ class CMapCache:
 
 map_cache = CMapCache()
 
-def get_tile_wmts(layer, tilematrix = 0, x = 0, y = 0, date="2017-01-01", verbose = False):
+def get_tile_wmts(layer, tilematrix = 1, x = 0, y = 0, date="2017-01-01", verbose = False):
     response = wmts.gettile(layer=layer, time=date, tilematrix=tilematrix, row=x, column=y)    
     image = imageio.imread(response.read())
         # headers are at response.info()
@@ -133,19 +133,32 @@ def get_cmap_gibs(layer, nan=True, verbose=False):
     else:
         cmap[index] = 0
 
-    for entry in cmap_body[1:]:
+    fill_color = cmap_body[1]
+    index = tuple([int(x) for x in fill_color['@rgb'].split(",")])
+    if nan:
+        cmap[index] = np.nan
+    else:
+        cmap[index] = 0
+
+
+    for entry in cmap_body[2:]:
         color = tuple([int(x) for x in entry['@rgb'].split(",")])
+        print(entry)
         x = entry['@value'][1:-1].split(",")
-        if "INF" in x[0]:
-            if "INF" in x[1]:
-                continue
+
+        if len(x) == 1:
+            cmap[color] = float(x[0])
+        elif len(x) == 2:
+            if "INF" in x[0]:
+                if "INF" in x[1]:
+                    continue
+                else:
+                    cmap[color] = float(x[1])
             else:
-                cmap[color] = float(x[1])
-        else:
-            if "INF" in x[1]:
-                cmap[color] = float(x[0])
-            else:
-                cmap[color] = (float(x[0]) + float(x[1])) / 2
+                if "INF" in x[1]:
+                    cmap[color] = float(x[0])
+                else:
+                    cmap[color] = (float(x[0]) + float(x[1])) / 2
 
     map_cache.cache(layer, cmap)
     return cmap
@@ -299,7 +312,7 @@ def format_list(list):
             s += ","
     return s
 
-def time_series(layers, tilematrix : str, date1 : str, date2 : str, verbose = False, increment="daily", product="gibs"):    
+def time_series(layers, tilematrix : str, date1 : str, date2 : str, verbose = False, increment="daily", product="gibs", typ="single"):    
     d1 = datetime.datetime.strptime(date1, "%Y-%m-%d")
     d2 = datetime.datetime.strptime(date2, "%Y-%m-%d")
 
@@ -324,30 +337,24 @@ def time_series(layers, tilematrix : str, date1 : str, date2 : str, verbose = Fa
     # info = []
 
     for j, layer in enumerate(layers):
-        ovs = []
-        s = time.time()
+        results = []
+        if typ == "global":
+            for i, date in enumerate(dates):
+                ov = Overview.get_async(layer, date=date, tilematrix=tilematrix, verbose=verbose, product=product)
+                results.append(ov)
 
-        for i, date in enumerate(dates):
-            ov = Overview.get_async(layer, date=date, tilematrix=tilematrix, verbose=verbose, product=product)
-            ovs.append(ov)
+            loop = asyncio.get_event_loop()
+            future = asyncio.ensure_future(asyncio.gather(*results))
+            loop.run_until_complete(future)
+            results = future.result()
 
-        loop = asyncio.get_event_loop()
-        future = asyncio.ensure_future(asyncio.gather(*ovs))
-        loop.run_until_complete(future)
-
-        e = time.time()
-
-        print("HTTP requests for layer {} took: {}s".format(layer, e - s))
-
-        s = time.time()
-
-        results = future.result()
+        else:
+            for i, date in enumerate(dates):
+                print(date)
+                results.append(get_tile_wmts(layer, date=date)[0])
+        
         for i, ov in enumerate(results):
             data[j, i] = np.array([ov.mean(), ov.min(), ov.max()])
-
-        e = time.time()
-
-        print("Stats for layer {} took {}s".format(layer, e - s))
 
     return data, dates, results
 
@@ -369,8 +376,8 @@ def plot(layers, dates, tilematrix, data):
 if __name__ == "__main__":
     print("running debug!")
     with debug(True):
-        data, dates, ovs = time_series(["MODIS_Terra_Brightness_Temp_Band31_Day"], "1", "2014-01-01", "2016-01-01", increment="monthly") # , "AIRS_Methane_Volume_Mixing_Ratio_Daily_Day"
-        plot(["MODIS_Terra_Brightness_Temp_Band31_Day"], dates, "2", data) # , "AIRS_Methane_Volume_Mixing_Ratio_Daily_Day"
+        data, dates, ovs = time_series(["AIRS_Methane_Volume_Mixing_Ratio_Daily_Day"], "1", "2012-01-01", "2014-01-01", increment="monthly", typ="single") # , "AIRS_Methane_Volume_Mixing_Ratio_Daily_Day"
+        plot(["AIRS_Methane_Volume_Mixing_Ratio_Daily_Day"], dates, "1", data) # , "AIRS_Methane_Volume_Mixing_Ratio_Daily_Day"
         
     # with debug(True):
     #     data, dates, ovs = time_series(["AVHRR_OI-NCEI-L4-GLOB-v2.0"], "1", "2017-01-01", "2017-01-14", increment="daily", product="gibs")

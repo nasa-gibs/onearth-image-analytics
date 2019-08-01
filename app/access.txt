@@ -7,3 +7,12 @@ Request URL: /, domain: http://onearth-analytics/analytics/, endpoint: index
 ---Received request---
 Request URL: /, domain: http://onearth-analytics/analytics/, endpoint: index
 ---Request ended (Total time: 0.032471418380737305)---
+---Received request---
+---Received request---
+Request URL: /, domain: http://onearth-analytics/analytics/, endpoint: index
+Request URL: /, domain: http://onearth-analytics/analytics/, endpoint: index
+---Request ended (Total time: 0.07800459861755371)---
+---Request ended (Total time: 0.08046197891235352)---
+---Received request---
+Request URL: /, domain: http://onearth-analytics/analytics/, endpoint: index
+---Request ended (Total time: 0.03101325035095215)---

@@ -4,6 +4,9 @@ import WMTSCapabilities from 'ol/format/WMTSCapabilities.js';
 import TileLayer from 'ol/layer/Tile.js';
 import OSM from 'ol/source/OSM.js';
 import WMTS, {optionsFromCapabilities} from 'ol/source/WMTS.js';
+import {Vector as VectorSource} from 'ol/source.js';
+import Draw, {createRegularPolygon, createBox} from 'ol/interaction/Draw.js';
+import {get as getProjection} from 'ol/proj.js';
 
 /** get value of currently selected option */
 function getValue(selector) {
@@ -72,8 +75,7 @@ function createWMTSMap(url, default_layer, date) {
             zoom: 2
           })
         });
-
-    
+            
         /* create a dropdown menu with these items */
         let div = document.querySelector("#container");
 
@@ -83,7 +85,7 @@ function createWMTSMap(url, default_layer, date) {
         for (let option of ["none", "sobel", "downsample", "blur"]) {
             method_select.options.add(new Option(option, option));
         }
-
+        
         new_frag.insertBefore(method_select, new_frag.firstChild);
         div.insertBefore(new_frag, div.firstChild);
 
@@ -114,14 +116,37 @@ function createWMTSMap(url, default_layer, date) {
             });
         });
 
-    });
+        return map;
+    }).then(function(map) {
+        var source = new VectorSource({wrapX: false});
 
-    return map;
-}
+        var draw; // global so we can remove it later
+        function addInteraction() {
+            var value = 'Circle';
+            var geometryFunction = createBox();
+            draw = new Draw({
+                source: source,
+                type: value,
+                geometryFunction: geometryFunction
+                });
 
+            draw.on('drawend',function(e){
+                    // let extent = e.feature.getGeometry().getExtent();
+                    let extent = e.feature.getGeometry().transform('EPSG:3857', 'EPSG:4326').flatCoordinates.slice(0, 4)
+                    let resolution = map.getView().getResolution();
+                    console.log(extent);
+                    console.log(resolution);
+            });
+            map.addInteraction(draw);
+        };
+
+        console.log(map);
+
+        addInteraction();
+})};
 
 /* this is the actual GIBS server */
-let map = createWMTSMap(
+createWMTSMap(
     "https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/wmts.cgi?SERVICE=WMTS&request=GetCapabilities",
     'MODIS_Terra_CorrectedReflectance_TrueColor',
     '2016-06-04'

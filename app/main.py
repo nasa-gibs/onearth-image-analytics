@@ -103,7 +103,7 @@ def getplot():
 
     layer = request.args['layer']
 
-    data, dates, results = time_series([layer], '1', '2017-01-01', '2017-01-14', product="gibs")
+    data, dates, results = time_series([layer], '1', '2012-01-01', '2014-01-1', product="gibs", increment='monthly', typ="single")
 
     # N = len(data)
     # x = [entry[0]['iso_time'].split("T")[0] for entry in data] # np.linspace(0, 1, N)
@@ -119,7 +119,7 @@ def getplot():
               xaxis = dict(title = 'Date'),
               yaxis = dict(title = name),
               height=300,
-              ) 
+            )
 
     # Create a trace
     trace = go.Scatter(

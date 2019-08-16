@@ -1,8 +1,8 @@
-# gibs-image-analytics
+# OnEarth Image Analytics
 
 This is a Flask web-server integrated into the OnEarth Docker network for serving
-on-demand analytics from GIBS imagery. This includes image filters, correlations,
-time-series data, and more. 
+on-demand analytics and image resampling from OnEarth imagery. This includes image filters, 
+correlations, time-series data, and more. 
 
 ## Installation
 

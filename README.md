@@ -4,6 +4,10 @@ This is a Flask web-server integrated into the OnEarth Docker network for servin
 on-demand analytics and image resampling from OnEarth imagery. This includes image filters, 
 correlations, time-series data, and more. 
 
+## Usage
+
+The simplest way to use this library is to install dependencies in using `pip install -r app/requirements.txt` and then simply run `app/example.py` using python (e.g. `python example.py --layer MODIS_Aqua_L3_SST_MidIR_9km_Night_Monthly --startdate 2012-01-01 --enddate 2014-01-01 --level 2`). This should pull data directly from GIBS and plot it using matplotlib. To install the full library, it's advisable to use the provided Dockerfile and run the container with direct access to an OnEarth server.
+
 ## Installation
 
 Read the docker README for installation advice. The application can be run as a Docker container by simply running `./run.sh`,

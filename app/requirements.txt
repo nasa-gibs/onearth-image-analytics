@@ -1,0 +1,12 @@
+argparse
+requests 
+imageio 
+scikit-image 
+scikit-learn
+numpy
+matplotlib
+requests
+owslib
+imageio
+xmltodict
+scipy

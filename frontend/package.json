@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "parcel": "^1.12.3",
     "plotly": "^1.0.6",
     "popper": "^1.0.1"

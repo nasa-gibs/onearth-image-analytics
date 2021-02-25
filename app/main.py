@@ -10,6 +10,10 @@ import sys
 import time
 import os
 
+import plotly
+import plotly.graph_objs as go
+import numpy as np
+
 app = Flask(__name__)
 app.config['REVERSE_PROXY_PATH'] = '/analytics'
 ReverseProxyPrefixFix(app)
@@ -84,11 +88,6 @@ def parse_args(args):
 
     else:
         return None, {}
-
-import plotly
-import plotly.plotly as py
-import plotly.graph_objs as go
-import numpy as np
 
 @app.route("/getplot")
 def getplot():

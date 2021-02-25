@@ -2,7 +2,7 @@
 
 This is a Flask web-server integrated into the OnEarth Docker network for serving
 on-demand analytics and image resampling from OnEarth imagery. This includes image filters, 
-correlations, time-series data, and more. 
+correlations, time-series data, and more.
 
 ## Usage
 
@@ -22,8 +22,9 @@ ProxyPass /analytics http://onearth-analytics
 ProxyPassReverse /analytics http://onearth-analytics
 ```
 
-4. Launch the `onearth-analytics` container with `./run.sh`. 
-5. Launch the frontend from the `frontend` directory with `frontend/run.sh`. 
+4. Restart the Apache server in the `onearth-demo` container `httpd -k restart`
+5. Launch the `onearth-analytics` container with `./run.sh`. 
+6. Launch the frontend from the `frontend` directory with `frontend/run.sh` (may need to run `npm install` first).
 
 This will work properly, but it will be slow, because it has to pull all of the data remotely from the OnEarth servers, instead of 
 over a local network as part of OnEarth. This also works with OnEarth running locally, and instructions for configuring

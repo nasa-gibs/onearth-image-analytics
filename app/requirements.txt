@@ -10,3 +10,4 @@ owslib
 imageio
 xmltodict
 scipy
+aiohttp

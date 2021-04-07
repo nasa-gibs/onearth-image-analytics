@@ -25,7 +25,7 @@ ProxyPassReverse /analytics http://onearth-analytics
 4. Restart the Apache server in the `onearth-demo` container `httpd -k restart`
 5. Build the `onearth-analytics` image with `./rebuild.sh` if necessary.
 6. Launch the `onearth-analytics` container with `./run.sh`
-7. Launch the frontend from the `frontend` directory with `frontend/run.sh` (may need to run `npm install` first).
+7. Launch the frontend from the `frontend` directory with `./run.sh` (may need to run `npm install` first).
 
 This will work properly, but it will be slow, because it has to pull all of the data remotely from the OnEarth servers, instead of 
 over a local network as part of OnEarth. This also works with OnEarth running locally, and instructions for configuring

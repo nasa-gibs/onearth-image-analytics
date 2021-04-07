@@ -1,5 +1,6 @@
 from flask import Flask, render_template, flash, redirect, session, url_for, request, g, Markup, jsonify
 from flask_reverse_proxy_fix.middleware import ReverseProxyPrefixFix
+from flask_cors import CORS, cross_origin
 
 from methods import sobel, downsample, blur, gaussian_blur, correlation
 from utils import ACCESS_LOG, ERROR_LOG, timeit, log_request, profileit, timeit
@@ -15,8 +16,11 @@ import plotly.graph_objs as go
 import numpy as np
 
 app = Flask(__name__)
+cors = CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
 app.config['REVERSE_PROXY_PATH'] = '/analytics'
 ReverseProxyPrefixFix(app)
+
 
 def handle_varnish(request, response):
     if 'X-Varnish' in request.headers:
@@ -90,6 +94,7 @@ def parse_args(args):
         return None, {}
 
 @app.route("/getplot")
+@cross_origin()
 def getplot():
     # with open("data.json", "rb") as f:
     #     raw = f.read()
@@ -102,7 +107,7 @@ def getplot():
 
     layer = request.args['layer']
 
-    data, dates, results = time_series([layer], '1', '2012-01-01', '2014-01-1', product="gibs", increment='monthly', typ="single")
+    data, dates, results = time_series([layer], '1', '2012-01-01', '2014-01-1', product="gibs", increment='monthly', typ="global")
 
     # N = len(data)
     # x = [entry[0]['iso_time'].split("T")[0] for entry in data] # np.linspace(0, 1, N)
@@ -134,6 +139,7 @@ def getplot():
 
 import json
 @app.route("/timeSeriesSpark")
+@cross_origin()
 @log_request
 def timeSeries():
     ACCESS_LOG(str(request.args))
@@ -178,6 +184,7 @@ def timeSeries():
     return json.dumps(data, indent=4), 200, {'Content-Type' : 'application/json', 'Access-Control-Allow-Origin' : '*'}
 
 @app.route("/generic/<int:tilematrix>/<int:x>/<int:y>")
+@cross_origin()
 @log_request
 def generic(tilematrix, x, y):
     ACCESS_LOG(str(request.args))
@@ -200,6 +207,7 @@ def generic(tilematrix, x, y):
 
 # @app.route("/wmts/<string:projection>/<string:kind>/<string:product>/default/<string:date>/<string:resolution>/<int:tilematrix>/<int:x>/<int:y>/<int:n>.<string:extension>")
 @app.route("/wmts/<string:projection>/<string:kind>/<string:product>/default/<string:date>/<string:resolution>/<int:tilematrix>/<int:x>/<int:y>.<string:extension>")
+@cross_origin()
 @log_request
 def single_tile(projection, kind, product, date, resolution, tilematrix, x, y, extension):
     url = "http://onearth-tile-services" + request.path
@@ -235,6 +243,7 @@ def single_tile(projection, kind, product, date, resolution, tilematrix, x, y, e
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
+@cross_origin()
 @log_request
 def catch_all_debug(path):
     url = "http://onearth-tile-services/" + path
@@ -248,16 +257,19 @@ def catch_all_debug(path):
 
 @app.route('/')
 @app.route('/index')
+@cross_origin()
 @log_request
 def index():
     return render_template('index.html')
 
 @app.route('/about')
+@cross_origin()
 @log_request
 def about():
     return render_template('about.html')
 
 @app.route('/test')
+@cross_origin()
 @log_request
 def test():
     ACCESS_LOG("---Executing write test of log file---")

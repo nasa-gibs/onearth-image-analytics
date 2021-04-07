@@ -32,7 +32,7 @@
 
           $("#plot").show();
         };
-        xhttp.open("GET", "http://localhost:86/analytics/getplot?layer=" + getValue(document.getElementById("selector")), true);
+        xhttp.open("GET", "http://localhost/analytics/getplot?layer=" + getValue(document.getElementById("selector")), true);
         xhttp.send();
       }
 

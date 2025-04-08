@@ -5,6 +5,7 @@
     "build": "parcel build --public-url . index.html"
   },
   "dependencies": {
+    "@parcel/source-map": "^2.1.1",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^4.6.0",
     "is-svg": ">=4.2.2",

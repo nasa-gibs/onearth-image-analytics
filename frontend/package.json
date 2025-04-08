@@ -5,6 +5,8 @@
     "build": "parcel build --public-url . index.html"
   },
   "dependencies": {
+    "@parcel/config-default": "2.1.1",
+    "@parcel/optimizer-htmlnano": "2.1.1",
     "@parcel/source-map": "^2.1.1",
     "@popperjs/core": "^2.9.2",
     "bootstrap": "^4.6.0",

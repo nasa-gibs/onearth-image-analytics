@@ -1,6 +1,7 @@
 FROM tiangolo/meinheld-gunicorn-flask:python3.7
 
 COPY ./app /app
+RUN pip install flask==2.1.3
 RUN pip install requests flask-reverse-proxy-fix flask-cors imageio scikit-image scikit-learn 
 RUN pip install opencv-python grequests plotly owslib xmltodict matplotlib 
 RUN pip install scipy aiohttp
